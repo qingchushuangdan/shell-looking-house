@@ -1,2 +1,148 @@
-<!--pages/index/index.wxml-->
-<text>pages/index/index.wxml</text>
+<view class="main">
+	<swiper
+	 autoplay="{{true}}"
+	 interval="{{interval}}"
+	 circular="{{true}}"
+	 duration="{{duration}}"
+	 indicator-dots="{{true}}"
+	 indicator-active-color="#fff"
+	>
+		<block wx:for="{{imgUrls}}" wx:key="{{index}}">
+			<swiper-item>
+				<image class="slide-image" src="{{item}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view class="body-second">
+		<view class="body-second_contentFirst">
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/secondhouse1.png"></image>
+				</view>
+				<text class="body-second_text">二手房</text>
+			</view>
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/secondhouse2.png"></image>
+				</view>
+				<text class="body-second_text">新房</text>
+			</view>
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/secondhouse3.png"></image>
+				</view>
+				<text class="body-second_text">租房</text>
+			</view>
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/secondhouse4.png"></image>
+				</view>
+				<text class="body-second_text">卖房</text>
+			</view>
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/secondhouse5.png"></image>
+				</view>
+				<text class="body-second_text">海外</text>
+			</view>
+		</view>
+		<view class="body-second_contentSecond">
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/book.png"></image>
+				</view>
+				<text class="body-second_text">买卖流程</text>
+			</view>
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/gujia.png"></image>
+				</view>
+				<text class="body-second_text">去估价</text>
+			</view>
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/sum.png"></image>
+				</view>
+				<text class="body-second_text">房贷计算</text>
+			</view>
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/move.png"></image>
+				</view>
+				<text class="body-second_text">搬家</text>
+			</view>
+			<view class="body-second_content">
+				<view class="body-second_iconout">
+					<image class="body-second_icon" src="/image/ballot.png"></image>
+				</view>
+				<text class="body-second_text">红包雨</text>
+			</view>
+		</view>
+	</view>
+	<view class="body-third">
+		<view class="body-third_title">
+			房屋工具
+		</view>
+		<view class="body-third_content">
+			<view class="body-third_contentLeft">
+				<view class="body-third_contentLeftIn">
+					<view class="body-thirf_contentTitle">
+						房贷计算
+					</view>
+					<view class="body-third_contentText">
+						买房月供还多少
+					</view>
+					<view class="body-third_contentEnd">
+						立即计算
+					</view>
+				</view>
+				<image class="body-third_image" src="/image/direct.png"></image>
+			</view>
+			<view class="body-third_contentRight">
+				<view class="body-third_contentRightIn">
+					<view class="body-thirf_contentTitle">
+						购房资质
+					</view>
+					<view class="body-third_contentText">
+						我有购房资格吗
+					</view>
+					<view class="body-third_contentEnd">
+						立即查询
+					</view>
+				</view>
+				<image class="body-third_image" src="/image/search.png"></image>
+			</view>
+		</view>
+	</view>
+	<view class="body-fouth">
+		<view class="body-fouth_title">
+			帮我找房
+		</view>
+		<view class="body-fouth_content">
+			<view class="body-fouth_contentIn">
+				<view class="body-fouth_context">
+					全城经纪人为您线上找房
+				</view>
+				<view class="body-fouth_context">
+					定制推荐/极速响应/专属推荐
+				</view>
+				<view class="body-fouth_contextEnd">
+					立即找房
+				</view>
+
+			</view>
+			<image class="body-fouth_image" src="/image/bigjingzi.png">
+
+			</image>
+		</view>
+	</view>
+	<view class="body-fifth">
+		<view class="body-fifth_titleLeft">
+			新房·本周热门好盘
+		</view>
+		<view class="body-fifth_titleRight">
+			更多在售楼盘
+		</view>
+	</view>
+</view>
+

@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    imgUrls: [
+      '/image/swiper1.jpg',
+      '/image/swiper2.jpg',
+      '/image/swiper3.jpg'
+    ],
+    interval: '3000',
+    duration: '800'
   },
 
   /**
