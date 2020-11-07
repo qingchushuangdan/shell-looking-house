@@ -1,0 +1,54 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/watch/watch",
+    "pages/news/news",
+    "pages/follow/follow",
+    "pages/me/me"
+
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "贝壳找房",
+    "navigationBarTextStyle":"black"
+
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./image/index.png",
+        "selectedIconPath": "./image/index.png"
+      },
+      {
+        "pagePath": "pages/watch/watch",
+        "text": "看点",
+        "iconPath": "./image/watch.png",
+        "selectedIconPath": "./image/watch.png"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "text": "消息",
+        "iconPath": "./image/news.png",
+        "selectedIconPath": "./image/news.png"
+      },
+      {
+        "pagePath": "pages/follow/follow",
+        "text": "关注",
+        "iconPath": "./image/Follow.png",
+        "selectedIconPath": "./image/Follow.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "./image/me.png",
+        "selectedIconPath": "./image/me.png"
+      }
+    ]
+  },
+  
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
