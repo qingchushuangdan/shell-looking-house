@@ -1,1 +1,18 @@
 /* pages/watch/watch.wxss */
+.view{
+    padding: 0 30rpx;
+    /* border: 1px solid #000; */
+}
+.tab {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-list {
+    /* font-weight: bold; */
+    border: 1px solid #000;
+}
+.view-search .img {
+    width: 40rpx;
+    height: 40rpx;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "shell-looking-house",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qingchushuangdan/shell-looking-house.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qingchushuangdan/shell-looking-house/issues"
+  },
+  "homepage": "https://github.com/qingchushuangdan/shell-looking-house#readme",
+  "dependencies": {
+    "@vant/weapp": "^1.5.2"
+  }
+}

@@ -1,2 +1,23 @@
 <!--pages/watch/watch.wxml-->
-<text>pages/watch/watch.wxml</text>
+<view class="view">
+	<!-- 导航栏 -->
+	<view class="tab">
+		<view class="view-list">
+			<van-tabs
+			 active="{{active}}"
+			 title-active-color="#000000"
+			 color="#007ACC"
+			 line-width="25rpx"
+			>
+				<van-tab title="好房"></van-tab>
+				<van-tab title="发现"></van-tab>
+				<van-tab title="行情"></van-tab>
+				<van-tab title="踩盘"></van-tab>
+			</van-tabs>
+		</view>
+		<view class="view-search">
+			<image class="img" src="../../image/view-search.png"></image>
+		</view>
+	</view>
+</view>
+
