@@ -1,11 +1,10 @@
 {
   "pages":[
-    "pages/index/index",
     "pages/watch/watch",
+    "pages/me/me",
+    "pages/index/index",
     "pages/news/news",
-    "pages/follow/follow",
-    "pages/me/me"
-
+    "pages/follow/follow"
   ],
   "window":{
     "backgroundTextStyle":"light",

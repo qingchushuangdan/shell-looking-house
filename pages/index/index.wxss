@@ -1,1 +1,126 @@
 /* pages/index/index.wxss */
+.slide-image{
+    width: 100%;
+    height: 100%;
+}
+.body-second_contentFirst{
+    display: flex;
+}
+.body-second_contentSecond{
+    display: flex;
+    margin-top: 30rpx;
+}
+.body-second_content{
+    flex: 1;
+    text-align: center;
+}
+.body-second_icon{
+    width: 60rpx;
+    height: 60rpx;
+}
+.body-second{
+    margin: 40rpx 20rpx 0 20rpx;
+    
+}
+.body-second_text{
+    font-size: 26rpx;
+    /* font-weight: bold; */
+}
+.body-third{
+    margin: 50rpx;
+}
+.body-third_content{
+    display: flex;
+    margin-top: 25rpx;
+}
+.body-third_contentLeft{
+    flex: 1;
+    border: 3rpx solid #CCCCCC;
+    border-radius: 10rpx;
+    display: flex;
+    position: relative;
+}
+.body-third_contentRight{
+    flex: 1;
+    border: 3rpx solid #CCCCCC;
+    margin-left: 15rpx;
+    border-radius: 10rpx;
+    position: relative;
+}
+.body-third_title{
+    font-size: 38rpx;
+    font-weight: 700;
+}
+.body-third_contentLeftIn{
+    margin: 20rpx 0 20rpx 20rpx;
+}
+.body-third_contentRightIn{
+    margin: 20rpx 0 20rpx 20rpx;
+}
+.body-thirf_contentTitle{
+    font-size: 31rpx;
+    font-weight: 700;
+}
+.body-third_contentText{
+    font-size: 21rpx;
+    font-weight: 300;
+}
+.body-third_contentEnd{
+    font-size: 25rpx;
+    font-weight: 700;
+    margin-top: 6rpx;
+}
+.body-third_image{
+    width: 70rpx;
+    height: 70rpx;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.body-fouth{
+    margin: 0 50rpx;
+}
+.body-fouth_content{
+    border: 3rpx solid #CCCCCC;
+    border-radius: 10rpx;
+    margin-top: 25rpx;
+    display: flex;
+    position: relative;
+}
+.body-fouth_title{
+    font-size: 38rpx;
+    font-weight: 700;
+}
+.body-fouth_contentIn{
+    margin: 25rpx 0 25rpx 25rpx;  
+}
+.body-fouth_context{
+    font-size: 28rpx;
+}
+.body-fouth_contextEnd{
+    margin-top: 10rpx;
+    font-size: 28rpx;
+    font-weight: 600;
+}
+.body-fouth_image{
+    width: 160rpx;
+    height: 160rpx;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.body-fifth{
+    display: flex;
+    position: relative;
+    margin: 50rpx;
+}
+.body-fifth_titleLeft{
+    font-size: 38rpx;
+    font-weight: 700;
+}
+.body-fifth_titleRight{
+    position: absolute;
+    font-size: 24rpx;
+    top: 10rpx;
+    right: 0;
+}

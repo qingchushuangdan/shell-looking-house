@@ -1,18 +1,111 @@
 /* pages/watch/watch.wxss */
-.view{
-    padding: 0 30rpx;
+.viewWrap {
+    padding: 0 25rpx;
     /* border: 1px solid #000; */
 }
-.tab {
+
+.view-tab {
+    /* border: 1px solid #000; */
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.view-list {
-    /* font-weight: bold; */
-    border: 1px solid #000;
+
+.swiper-tab {
+    display: flex;
+    text-align: center;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 28rpx;
+    color: #000;
 }
-.view-search .img {
+
+.swiper-tab .swiper-tab-item {
+    width: 125rpx;
+    /* border: 1px solid #000; */
+    text-align: left;
+    font-family: '微软雅黑';
+    font-weight: bold;
+}
+
+.active {
+    font-size: 40rpx;
+    font-weight: bolder;
+}
+
+/* 控制底部边框长度 */
+.active::after {
+    content: '';
+    position: absolute;
+    /* top: auto; */
+    margin-left: -60rpx;
+    margin-top: 76rpx;
     width: 40rpx;
-    height: 40rpx;
+    height: 4rpx;
+    background-color: #3300cc;
+}
+
+.view-search .img {
+    width: 30rpx;
+    height: 30rpx;
+}
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}
+
+.found {
+    padding: 20rpx 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.found .found-item {
+    display: flex;
+    justify-content: space-between;
+    /* height: 200rpx; */
+}
+
+.found-item-content{
+    margin-right: 40rpx;
+    /* border: 1px solid #000; */
+    /* position: relative; */
+}
+
+.found-item-content .found-item-title{
+    font-weight: bold;
+    /* border: 1px solid #000; */
+    margin-bottom: 25rpx;
+}
+
+.found-item-authorTime {
+    /* display: flex; */
+    font-size: 28rpx;
+    font-family: '微软雅黑';
+    /* border: 1px solid #000; */
+    /* position: absolute;
+    bottom: 0; */
+}
+
+.found-item-authorTime .found-item-author{
+    margin-right: 40rpx;
+    /* border: 1px solid #000; */
+    display: inline-block;
+}
+
+.found-item-authorTime .found-item-time {
+    display: inline-block;
+}
+
+.found-item-pic .pic {
+    width: 250rpx;
+    height: 200rpx;
+    /* border: 1px solid #000; */
+}
+
+.found-item-seeTimes {
+    display: none;
 }

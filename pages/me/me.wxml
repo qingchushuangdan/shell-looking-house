@@ -1,2 +1,113 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class="header">
+    <image class="img" src="../../image/head.png" />
+</view>
+<view class="title">
+    <view class="subscribe">
+        <image class="img2" src="../../image/subscribe.png" />
+        <p>订阅</p>
+    </view>
+    <view class="love">
+        <image class="img2" src="../../image/love.png" />
+        <p>关注</p>
+    </view>
+    <view class="scan">
+        <image class="img2" src="../../image/scan.png" />
+        <p>浏览</p>
+    </view>
+</view>
+<view class="content">
+    <!-- <view class="desc"> -->
+    <view class="box1">
+        <image class="img3" src="../../image/wallet.png"></image>
+        <p class="text">我的钱包</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/pay.png"></image>
+        <p class="text">我的交易</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/rent.png"></image>
+        <p class="text">我的租约</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/house.png"></image>
+        <p class="text">我的房子</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/coupon.png"></image>
+        <p class="text">我的优惠劵</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/order.png"></image>
+        <p class="text">意向金订单</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/order.png"></image>
+        <p class="text">新房认购订单</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/report.png"></image>
+        <p class="text">我的置业报告</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/rent.png"></image>
+        <p class="text">速收房款</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/home.png"></image>
+        <p class="text">我的家庭</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/integral.png"></image>
+        <p class="text">我的积分</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/card.png"></image>
+        <p class="text">找房卡</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/life.png"></image>
+        <p class="text">生活订单</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <!-- </view> -->
+</view>
+<view class="footer">
+    <view class="box1">
+        <image class="img3" src="../../image/feedback.png"></image>
+        <p class="text">反馈问题</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/horn.png"></image>
+        <p class="text">关注服务号</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/phone.png"></image>
+        <p class="text">客服电话</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/about.png"></image>
+        <p class="text">关于我们</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="box1">
+        <image class="img3" src="../../image/join.png"></image>
+        <p class="text">加入贝壳</p>
+        <image class="img3_arrow" src="../../image/arrow.png"></image>
+    </view>
+</view>

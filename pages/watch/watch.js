@@ -5,7 +5,25 @@ Page({
    * 页面的初始数据
    */
   data: {
-    active: 1
+    currentTab: 1
+  },
+
+  clickTab: function (e) {
+    let that = this
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  },
+
+  swiperTab: function (e) {
+    var that = this
+    that.setData({
+      currentTab: e.detail.current
+    })
   },
 
   /**
