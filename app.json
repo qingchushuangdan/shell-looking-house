@@ -1,10 +1,11 @@
 {
   "pages":[
+    "pages/me/me",
     "pages/index/index",
     "pages/watch/watch",
     "pages/news/news",
-    "pages/follow/follow",
-    "pages/me/me"
+    "pages/follow/follow"
+    
 
   ],
   "window":{
