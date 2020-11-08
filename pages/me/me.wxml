@@ -101,12 +101,12 @@
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
     <view class="box1">
-        <image class="img3" src="../../image/house.png"></image>
+        <image class="img3" src="../../image/about.png"></image>
         <p class="text">关于我们</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
     <view class="box1">
-        <image class="img3" src="../../image/coupon.png"></image>
+        <image class="img3" src="../../image/join.png"></image>
         <p class="text">加入贝壳</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
