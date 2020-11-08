@@ -143,6 +143,44 @@
 		<view class="body-fifth_titleRight">
 			更多在售楼盘
 		</view>
+		<view class="body-fifth_content">
+			<view class="body-fifth_contentOne">
+				<image class="body-fifth_contentImg" src="/image/newhouse2.jpg"></image>
+				<view class="body-fifth_newHouseName">
+					{{newHouse.name}}
+				</view>
+				<view class="body-fifth_newHouseArea">
+					{{newHouse.area}}
+				</view>
+				<view class="body-fifth_newHousePrice">
+					{{newHouse.price}}
+				</view>
+			</view>
+			<view class="body-fifth_contentTwo">
+				<image class="body-fifth_contentImg" src="/image/newhouse1.jpg"></image>
+				<view class="body-fifth_newHouseName">
+					{{newHouse.name}}
+				</view>
+				<view class="body-fifth_newHouseArea">
+					{{newHouse.area}}
+				</view>
+				<view class="body-fifth_newHousePrice">
+					{{newHouse.price}}
+				</view>
+			</view>
+			<view class="body-fifth_contentThree">
+				<image class="body-fifth_contentImg" src="/image/newhouse3.jpg"></image>
+				<view class="body-fifth_newHouseName">
+					{{newHouse.name}}
+				</view>
+				<view class="body-fifth_newHouseArea">
+					{{newHouse.area}}
+				</view>
+				<view class="body-fifth_newHousePrice">
+					{{newHouse.price}}
+				</view>
+			</view>
+		</view>
 	</view>
 </view>
 

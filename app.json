@@ -1,7 +1,7 @@
 {
   "pages":[
-    "pages/me/me",
     "pages/index/index",
+    "pages/me/me",
     "pages/watch/watch",
     "pages/news/news",
     "pages/follow/follow"
