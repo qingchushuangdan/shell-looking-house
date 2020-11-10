@@ -1,8 +1,14 @@
 {
   "pages":[
+<<<<<<< HEAD
+    "pages/index/index",
+    "pages/me/me",
+    "pages/watch/watch",
+=======
     "pages/watch/watch",
     "pages/me/me",
     "pages/index/index",
+>>>>>>> fdda0a862207abf8bdca0e6736ff225917fba9bb
     "pages/news/news",
     "pages/follow/follow"
   ],

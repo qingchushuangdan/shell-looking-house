@@ -11,7 +11,12 @@ Page({
       '/image/swiper3.jpg'
     ],
     interval: '3000',
-    duration: '800'
+    duration: '800',
+    newHouse:{
+      name: '鸿海城',
+      area: '88-103m²',
+      price: '11000元/m²'
+    }
   },
 
   /**

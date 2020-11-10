@@ -117,10 +117,18 @@
 .body-fifth_titleLeft{
     font-size: 38rpx;
     font-weight: 700;
+    /* overflow: hidden; */
 }
 .body-fifth_titleRight{
     position: absolute;
     font-size: 24rpx;
     top: 10rpx;
     right: 0;
+}
+.body-fifth_contentImg{
+    width: 70rpx;
+    height: 70rpx;
+}
+.body-fifth_content{
+    display: flex;
 }
