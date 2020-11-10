@@ -5,7 +5,101 @@ Page({
    * 页面的初始数据
    */
   data: {
-    currentTab: 1
+    currentTab: 1,
+    allFound: [
+      // {
+      //   sign: '',
+      //   title: "人生的第一个10万，该如何理财",
+      //   author: '菜鸟理财',
+      //   time: '13小时前',
+      //   img: '',
+      //   flameTime: '3826'
+      // },
+      // {
+      //   sign: '百科',
+      //   title: "信用卡太多也会导致房贷被拒？对，这5种 “正确” 用卡行为也不行",
+      //   author: '眼里只有房',
+      //   time: '12小时前',
+      //   img: '',
+      //   flameTime: '4224'
+      // },
+      {
+        sign: '市场',
+        title: "恒大终止重组深深房，释放了什么信号？",
+        author: '国民经略',
+        time: '14小时前',
+        img: '../../image/pic1.jpg',
+        flameTime: '2708',
+        // signIcon: "#0066ff"
+      },
+      // {
+      //   sign: '',
+      //   title: "【装修专项】水槽怎么选？",
+      //   author: '合肥飞墨设计',
+      //   time: '18小时前',
+      //   img: '../../image/pic5.jpg',
+      //   flameTime: '591',
+      //   // signIcon: "#0066ff"
+      // },
+      {
+        sign: '热门',
+        title: "蚂蚁集团上市被叫停，人民日报等官媒集体力挺",
+        author: '一见财经',
+        time: '2020-11-05',
+        img: '../../image/pic2.jpg',
+        flameTime: '1.3万',
+        // signIcon: "#0066ff"
+      },
+      {
+        sign: '政策',
+        title: "有用！2020版安全标识标准图册",
+        author: '豆丁施工',
+        time: '19小时前',
+        img: '../../image/pic3.jpg',
+        flameTime: '347'
+      },
+      {
+        sign: '热门',
+        title: "金秋十月购好房，7日新上，总价最低82万",
+        author: '南昌有贝壳',
+        time: '2020-10-16',
+        img: '../../image/pic4.jpg',
+        flameTime: '1.4万'
+      },
+      {
+        sign: '热门',
+        title: "蚂蚁集团上市被叫停，人民日报等官媒集体力挺",
+        author: '一见财经',
+        time: '2020-11-05',
+        img: '../../image/pic2.jpg',
+        flameTime: '1.3万',
+        // signIcon: "#0066ff"
+      },
+      {
+        sign: '热门',
+        title: "金秋十月购好房，7日新上，总价最低82万",
+        author: '南昌有贝壳',
+        time: '2020-10-16',
+        img: '../../image/pic4.jpg',
+        flameTime: '1.4万'
+      },
+      {
+        sign: '热门',
+        title: "金秋十月购好房，7日新上，总价最低82万",
+        author: '南昌有贝壳',
+        time: '2020-10-16',
+        img: '../../image/pic4.jpg',
+        flameTime: '1.4万'
+      },
+      {
+        sign: '热门',
+        title: "金秋十月购好房，7日新上，总价最低82万",
+        author: '南昌有贝壳',
+        time: '2020-10-16',
+        img: '../../image/pic4.jpg',
+        flameTime: '1.4万'
+      }
+    ]
   },
 
   clickTab: function (e) {
@@ -25,6 +119,19 @@ Page({
       currentTab: e.detail.current
     })
   },
+
+  // changeColor: function (e) {
+  //   var that = this
+  //   let found = that.data.allFound
+  //   console.log(found)
+  //   for (let i = 0; i < found.length; i++) {
+  //     if (found[i].sign === '市场') {
+  //       that.setData({
+  //         signIcon: "#ff8800"
+  //       })
+  //     }
+  //   }
+  // },
 
   /**
    * 生命周期函数--监听页面加载

@@ -1,9 +1,15 @@
 {
+<<<<<<< HEAD
   "pages": [
     "pages/me/me",
     "pages/money/money",
     "pages/subscribe/subscribe",
     "pages/index/index",
+=======
+  "pages":[
+    "pages/index/index",
+    "pages/me/me",
+>>>>>>> 1ac498b257de91f4df8144fe81a18fc663330045
     "pages/watch/watch",
     "pages/news/news",
     "pages/follow/follow",
