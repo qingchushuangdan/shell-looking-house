@@ -94,6 +94,9 @@
 					</view>
 					<view class="body-third_contentEnd">
 						立即计算
+						<image class="rightArrow" src="/image/rightArrow.png">
+
+						</image>
 					</view>
 				</view>
 				<image class="body-third_image" src="/image/direct.png"></image>
@@ -108,6 +111,9 @@
 					</view>
 					<view class="body-third_contentEnd">
 						立即查询
+						<image class="rightArrow" src="/image/rightArrow.png">
+
+						</image>
 					</view>
 				</view>
 				<image class="body-third_image" src="/image/search.png"></image>
@@ -128,6 +134,9 @@
 				</view>
 				<view class="body-fouth_contextEnd">
 					立即找房
+					<image class="rightArrow" src="/image/rightArrow.png">
+
+					</image>
 				</view>
 
 			</view>
@@ -137,48 +146,154 @@
 		</view>
 	</view>
 	<view class="body-fifth">
-		<view class="body-fifth_titleLeft">
-			新房·本周热门好盘
-		</view>
-		<view class="body-fifth_titleRight">
-			更多在售楼盘
+		<view class="body-fifth_title">
+			<view class="body-fifth_titleLeft">
+				新房·本周热门好盘
+			</view>
+			<view class="body-fifth_titleRight">
+				更多在售楼盘
+				<image class="rightArrow" src="/image/rightArrow.png">
+
+				</image>
+			</view>
 		</view>
 		<view class="body-fifth_content">
 			<view class="body-fifth_contentOne">
 				<image class="body-fifth_contentImg" src="/image/newhouse2.jpg"></image>
 				<view class="body-fifth_newHouseName">
-					{{newHouse.name}}
+					{{newHouse.newHouseOne.name}}
 				</view>
 				<view class="body-fifth_newHouseArea">
-					{{newHouse.area}}
+					{{newHouse.newHouseOne.area}}
 				</view>
 				<view class="body-fifth_newHousePrice">
-					{{newHouse.price}}
+					{{newHouse.newHouseOne.price}}
 				</view>
 			</view>
-			<view class="body-fifth_contentTwo">
+			<view class="body-fifth_contentOne">
 				<image class="body-fifth_contentImg" src="/image/newhouse1.jpg"></image>
 				<view class="body-fifth_newHouseName">
-					{{newHouse.name}}
+					{{newHouse.newHouseTwo.name}}
 				</view>
 				<view class="body-fifth_newHouseArea">
-					{{newHouse.area}}
+					{{newHouse.newHouseTwo.area}}
 				</view>
 				<view class="body-fifth_newHousePrice">
-					{{newHouse.price}}
+					{{newHouse.newHouseTwo.price}}
 				</view>
 			</view>
-			<view class="body-fifth_contentThree">
+			<view class="body-fifth_contentOne">
 				<image class="body-fifth_contentImg" src="/image/newhouse3.jpg"></image>
 				<view class="body-fifth_newHouseName">
-					{{newHouse.name}}
+					{{newHouse.newHouseThree.name}}
 				</view>
 				<view class="body-fifth_newHouseArea">
-					{{newHouse.area}}
+					{{newHouse.newHouseThree.area}}
 				</view>
 				<view class="body-fifth_newHousePrice">
-					{{newHouse.price}}
+					{{newHouse.newHouseThree.price}}
 				</view>
+			</view>
+		</view>
+	</view>
+	<view class="body-fifth">
+		<view class="body-fifth_title">
+			<view class="body-fifth_titleLeft">
+				二手房·全城必看好房
+			</view>
+			<view class="body-fifth_titleRight">
+				南昌必看好房
+				<image class="rightArrow" src="/image/rightArrow.png">
+
+				</image>
+			</view>
+		</view>
+		<view class="body-fifth_content">
+			<view class="body-fifth_contentOne">
+				<image class="body-fifth_contentImg" src="/image/secondHouse2.jpg"></image>
+				<view class="body-fifth_newHouseName">
+					{{secondHouse.secondHouseOne.name}}
+				</view>
+				<view class="body-fifth_newHouseArea">
+					{{secondHouse.secondHouseOne.area}}
+				</view>
+				<view class="body-fifth_newHousePrice">
+					{{secondHouse.secondHouseOne.price}}
+				</view>
+			</view>
+			<view class="body-fifth_contentOne">
+				<image class="body-fifth_contentImg" src="/image/secondHouse1.jpg"></image>
+				<view class="body-fifth_newHouseName">
+					{{secondHouse.secondHouseTwo.name}}
+				</view>
+				<view class="body-fifth_newHouseArea">
+					{{secondHouse.secondHouseTwo.area}}
+				</view>
+				<view class="body-fifth_newHousePrice">
+					{{secondHouse.secondHouseTwo.price}}
+				</view>
+			</view>
+			<view class="body-fifth_contentOne">
+				<image class="body-fifth_contentImg" src="/image/secondHouse3.jpg"></image>
+				<view class="body-fifth_newHouseName">
+					{{secondHouse.secondHouseThree.name}}
+				</view>
+				<view class="body-fifth_newHouseArea">
+					{{secondHouse.secondHouseThree.area}}
+				</view>
+				<view class="body-fifth_newHousePrice">
+					{{secondHouse.secondHouseThree.price}}
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="body-seven">
+		<view class="body-seven_title">
+			我的房子
+		</view>
+		<view class="body-seven_content">
+			<view class="body-seven_context">
+				<view class="body-seven_contextOne">
+					添加我的房产
+				</view>
+				<view class="body-seven_contextOne">
+					随时掌握房产动态
+				</view>
+				<view class="body-seven_contextTwo">
+					去添加
+					<image class="rightArrow" src="/image/rightArrow.png">
+
+					</image>
+				</view>
+			</view>
+			<image class="houseicon" src="/image/iconhouse.png"></image>
+		</view>
+	</view>
+	<view class="body-eight">
+		<view class="body-eight_title">
+			升级找房服务
+		</view>
+		<view class="body-eight_content">
+			<view class="body-eight_context">
+				<view class="body-eight_contextOne">
+					找房顾问致电为您精准匹配房源
+				</view>
+				<view class="body-eight_contextTwo">
+					区域资深经纪人虚拟号隐私保护
+				</view>
+				<view class="body-eight_contextThree">
+					<button class="body-eight_button">同意</button>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="body-nine">
+		<view class="body-nine_title">
+			猜你喜欢的二手房
+		</view>
+		<view class="body-nine_content">
+			<view class="body-nine_contentLeft">
+				<image class="body-nine_image" src="/image/secondHouse3.jpg"></image>
 			</view>
 		</view>
 	</view>
