@@ -1,0 +1,47 @@
+/* pages/money/money.wxss */
+.header{
+    background-color: #2E72F6;
+    text-align: center;
+}
+.desc{
+    padding-top: 40rpx;
+}
+p.text{
+    color: #ffffff;
+}
+.img{
+    width: 50rpx;
+    height: 50rpx;
+    padding-left: 10px;
+}
+.money{
+    font-size: 50px;
+    color: #ffffff;
+    padding-bottom: 40rpx;
+    padding-top: 20rpx;
+}
+.safe{
+    background-color: #EAF1FF;
+    display: flex;
+    position: relative;
+}
+.info{
+    flex: 5;
+    color: #222222;
+    padding-left: 40rpx;
+    margin-top: 15rpx;
+    margin-bottom: 15rpx;
+}
+.identify{
+    width: 120rpx;
+    height: 40rpx; 
+    flex: 1;
+    color: #2E72F6;
+    border: #2E72F6 1px solid;
+    border-radius: 20rpx;
+    text-align: center;
+    position: absolute;
+    right: 40rpx;
+    top: 13rpx;
+}
+
