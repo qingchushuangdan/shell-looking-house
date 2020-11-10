@@ -44,22 +44,38 @@
 			</view>
 		</swiper-item>
 		<swiper-item>
-			<view class="found">
-				<view class="found-item">
-					<view class="found-item-content">
-						<view class="found-item-title">不看不知道！装修 “门”！！居然这么有讲究！</view>
-						<view class="found-item-authorTime">
-							<view class="found-item-author">家居严选师</view>
-							<view class="found-item-time">一天前</view>
-
+			<scroll-view scroll-y="true">
+				<view
+				 class="found"
+				 wx:for="{{allFound}}"
+				 wx:key="index"
+				>
+					<view class="found-item">
+						<view class="found-item-content">
+							<view class="found-item-content-title">
+								<view
+								 class="icon"
+								 style="background-color:{{signIcon}}"
+								 bindtap="changeColor"
+								>{{item.sign}}
+								</view>
+								<text class="found-item-title">{{item.title}}</text>
+							</view>
+							<view class="found-item-authorTime">
+								<view class="found-item-author">{{item.author}}</view>
+								<view class="found-item-time">{{item.time}}</view>
+							</view>
+						</view>
+						<view class="found-item-pic">
+							<image class="pic" src="{{item.img}}" />
+							<view class="seeTime">
+								<image class="flame" src="../../image/flame.png" />
+								<text class="found-item-seeTimes">{{item.flameTime}}</text>
+							</view>
 						</view>
 					</view>
-					<view class="found-item-pic">
-						<image class="pic" src="../../image/view-search.png" />
-					</view>
-					<view class="found-item-seeTimes">9889</view>
 				</view>
-			</view>
+			</scroll-view>
 		</swiper-item>
 		<swiper-item>
 			<view>
