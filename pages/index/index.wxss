@@ -110,25 +110,153 @@
     bottom: 0;
 }
 .body-fifth{
-    display: flex;
+    /* display: flex; */
     position: relative;
     margin: 50rpx;
+}
+.body-fifth_title{
+    display: flex;
 }
 .body-fifth_titleLeft{
     font-size: 38rpx;
     font-weight: 700;
+    display: inline-block;
+    flex: 1;
     /* overflow: hidden; */
 }
 .body-fifth_titleRight{
     position: absolute;
     font-size: 24rpx;
     top: 10rpx;
+    display: inline-block;
     right: 0;
+    flex: 1;
+    color: #9A9A9A;
 }
 .body-fifth_contentImg{
-    width: 70rpx;
-    height: 70rpx;
+    width: 210rpx;
+    height: 190rpx;
+    border-radius: 10rpx;
+
 }
 .body-fifth_content{
     display: flex;
+    margin-top: 30rpx;
+}
+.body-fifth_contentOne{
+    flex: 1;
+    margin-right: 18rpx;
+}
+.body-fifth_newHouseName{
+    margin-top: 5rpx;
+    font-weight: 700;
+    font-size: 30rpx;
+}
+.body-fifth_newHouseArea{
+    margin-top: 5rpx;
+    font-size: 22rpx;
+    color: #B1B1B1;
+}
+.body-fifth_newHousePrice{
+    margin-top: 5rpx;
+    color: #E7624B;
+    font-size: 24rpx;
+    font-weight: 700;
+}
+.rightArrow{
+    width: 20rpx;
+    height: 20rpx;
+    /* padding-top: 20rpx; */
+}
+.body-seven{
+    margin: 0 50rpx 50rpx 50rpx;
+}
+.body-seven_title{
+    font-size: 38rpx;
+    font-weight: 700;
+}
+.body-seven_content{
+    margin-top: 20rpx;
+    border: 3rpx solid #CCCCCC;
+    border-radius: 10rpx;
+    display: flex;
+    position: relative;
+    
+}
+.body-seven_context{
+    margin: 50rpx 0 30rpx 40rpx;
+}
+.body-seven_contextOne{
+    font-size: 32rpx;
+    font-weight: 700;
+}
+.body-seven_contextTwo{
+    font-size: 28rpx;
+    margin-top: 15rpx;
+    font-weight: 700;
+}
+.houseicon{
+    width: 160rpx;
+    height: 160rpx;
+    position: absolute;
+    right: 10rpx;
+    bottom: 10rpx;
+}
+.body-eight{
+    margin: 0 50rpx 50rpx 50rpx;
+}
+.body-eight_title{
+    font-size: 38rpx;
+    font-weight: 700;
+}
+.body-eight_content{
+    margin-top: 20rpx;
+    border: 3rpx solid #CCCCCC;
+    border-radius: 10rpx;
+}
+.body-eight_context{
+    margin: 35rpx 0 25rpx 35rpx;
+    /* position: relative; */
+}
+.body-eight_contextOne{
+    font-size: 36rpx;
+    font-weight: 700;
+}
+.body-eight_contextTwo{
+    margin-top: 10rpx;
+    color: #9E9E9E;
+    font-size: 22rpx;
+}
+.body-eight_button{
+    margin-top: 20rpx;
+    width: 200rpx;
+    /* height: 70rpx; */
+    font-size: 30rpx;
+    background-color: #2F72F7;
+    color: white;
+    left: 0;
+    line-height: 70rpx;
+    border: none;
+    margin-left: 0rpx;
+    /* position: absolute; */
+    /* text-align: left; */
+    
+}
+.body-eight_contextThree{
+    /* position: absolute; */
+    text-align: left;
+}
+.body-nine{
+    margin: 0 50rpx 50rpx 50rpx;
+}
+.body-nine_image{
+    width: 210rpx;
+    height: 170rpx;
+}
+.body-nine_title{
+    font-size: 38rpx;
+    font-weight: 700;
+}
+.body-nine_content{
+    margin-top: 30rpx;
 }
