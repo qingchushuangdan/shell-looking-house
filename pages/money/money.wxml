@@ -1,0 +1,32 @@
+<!-- pages/money/money.wxml -->
+<view class="header">
+        <view class="desc">
+            <p class="text">账户余额(元)</p>
+            <image class="img" src="../../image/eyes.png" style="vertical-align:middle"/>
+        </view>
+        <view class="money">
+            <p>0.00</p>
+        </view>
+</view>
+<view class="safe">
+    <view class="info">
+        <p>为保障您的资金安全，请完成实名认证</p>
+    </view>
+    <view class="identify">
+        <p>去认证</p>
+    </view>
+</view>
+<view class="content">
+    <view class="subscribe" bindtap = "subscribe">
+        <image class="img2" src="../../image/subscribe.png" />
+        <p>银行卡</p>
+    </view>
+    <view class="love" bindtap = "love">
+        <image class="img2" src="../../image/love.png" />
+        <p>账单</p>
+    </view>
+    <view class="scan" bindtap = "scan">
+        <image class="img2" src="../../image/scan.png" />
+        <p>支付设置</p>
+    </view>
+</view>

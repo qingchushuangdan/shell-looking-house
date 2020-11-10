@@ -1,0 +1,20 @@
+/* pages/love/love.wxss */
+.title{ 
+    display: flex;
+    text-align: center;
+    padding-top: 30rpx;
+    padding-bottom: 30rpx;
+    border-bottom: #F0F0F0 1px solid;
+}
+.second{
+    flex: 1;
+}
+.new{
+    flex: 1;
+}
+.rent{
+    flex: 1;
+}
+.village{
+    flex: 1;
+}

@@ -58,6 +58,14 @@ p.text{
     margin-left: 20rpx;
     /* margin-bottom: 50rpx; */
 }
+p.text1{
+    font-size: 15px;
+    height: 100%;
+    line-height: 100rpx;
+    color: #a1a1a1;
+    position: absolute;
+    right: 100rpx;
+}
 .img3_arrow{
     width: 20rpx;
     height: 20rpx;

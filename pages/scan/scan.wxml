@@ -1,0 +1,12 @@
+<!--pages/scan/scan.wxml-->
+<view class="title">
+    <view class="second">
+        <p>二手房</p>
+    </view>
+    <view class="new">
+        <p>新房</p>
+    </view>
+    <view class="rent">
+        <p>租房</p>
+    </view>
+</view>

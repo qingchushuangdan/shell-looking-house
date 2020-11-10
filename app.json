@@ -1,17 +1,31 @@
 {
+<<<<<<< HEAD
+  "pages": [
+    "pages/me/me",
+    "pages/money/money",
+    "pages/subscribe/subscribe",
+    "pages/index/index",
+=======
   "pages":[
     "pages/watch/watch",
     "pages/index/index",
     "pages/me/me",
+<<<<<<< HEAD
+=======
+>>>>>>> 1ac498b257de91f4df8144fe81a18fc663330045
+    "pages/watch/watch",
+>>>>>>> c154dc9c62b8c75a1971112d4960901a7d9bc108
     "pages/news/news",
-    "pages/follow/follow"
+    "pages/follow/follow",
+    "pages/love/love",
+    "pages/scan/scan"
+    
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "贝壳找房",
-    "navigationBarTextStyle":"black"
-
+    "navigationBarTextStyle": "black"
   },
   "tabBar": {
     "list": [
