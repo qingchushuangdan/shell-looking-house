@@ -1,4 +1,4 @@
-/* component/found/found.wxss */
+/* component/quotation/quotation.wxss */
 .found {
     padding: 20rpx 0;
     border-bottom: 1px solid #ccc;
@@ -14,27 +14,6 @@
     margin-right: 40rpx;
     /* border: 1px solid #000; */
     position: relative;
-}
-
-/* .found-item-content-title {
-    border: 1px solid #000;
-} */
-
-.found-item-content-title .icon {
-    height: 30rpx;
-    width: 60rpx;
-    font-size: 24rpx;
-    background-color: #0066ff;
-    color: #ffffff;
-    font-weight: bold;
-    margin-right: 15rpx;
-    display: inline-block;
-    padding: 5rpx;
-    line-height: 30rpx;
-    text-align: center;
-    /* display: flex;
-    justify-content: center; */
-    /* border: 1px solid #000; */
 }
 
 .found-item-content-title .found-item-title{

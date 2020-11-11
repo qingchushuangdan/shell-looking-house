@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "found": "/component/found/found"
+    "found": "/component/found/found",
+    "quotation": "/component/quotation/quotation"
   }
 }

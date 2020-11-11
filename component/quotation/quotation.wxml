@@ -1,0 +1,23 @@
+<!--component/quotation/quotation.wxml-->
+<!--component/found/found.wxml-->
+<view class="found">
+	<view class="found-item">
+		<view class="found-item-content">
+			<view class="found-item-content-title">
+				<text class="found-item-title">{{quotation.title}}</text>
+			</view>
+			<view class="found-item-authorTime">
+				<view class="found-item-author">{{quotation.author}}</view>
+				<view class="found-item-time">{{quotation.time}}</view>
+			</view>
+		</view>
+		<view class="found-item-pic">
+			<image class="pic" src="{{quotation.img}}" />
+			<view class="seeTime">
+				<image class="flame" src="../../image/flame.png" />
+				<text class="found-item-seeTimes">{{quotation.flameTime}}</text>
+			</view>
+		</view>
+	</view>
+</view>
+

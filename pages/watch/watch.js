@@ -17,24 +17,6 @@ Page({
         flameTime: '5033',
         signIcon: 'background-color: #ff0033'
       },
-      // {
-      //   sign: '',
-      //   title: "人生的第一个10万，该如何理财",
-      //   author: '菜鸟理财',
-      //   time: '13小时前',
-      //   img: '',
-      //   flameTime: '3826',
-      //   signIcon: 'background-color: #ff0033'
-      // },
-      // {
-      //   sign: '百科',
-      //   title: "信用卡太多也会导致房贷被拒？对，这5种 “正确” 用卡行为也不行",
-      //   author: '眼里只有房',
-      //   time: '12小时前',
-      //   img: '',
-      //   flameTime: '4224',
-      //   signIcon: 'background-color: #ff0033'
-      // },
       {
         sign: '市场',
         title: "恒大终止重组深深房，释放了什么信号？",
@@ -43,6 +25,16 @@ Page({
         img: '../../image/pic1.jpg',
         flameTime: '2708',
         signIcon: 'background-color: #ff0033'
+      },
+      {
+        sign: '',
+        title: "百万婚房，安家黄家湖",
+        author: '南昌大数据荐房',
+        time: '5天前',
+        img: '../../image/pic15.jpg',
+        flameTime: '',
+        signIcon: 'background-color: #ff0033',
+        seeTime: ''
       },
       {
         sign: '',
@@ -60,7 +52,8 @@ Page({
         time: '2020-11-05',
         img: '../../image/pic2.jpg',
         flameTime: '1.3万',
-        signIcon: 'background-color: #ff0033'
+        signIcon: 'background-color: #ff0033',
+        showImg: ''
       },
       {
         sign: '',
@@ -69,7 +62,8 @@ Page({
         time: '2天前',
         img: '../../image/pic11.jpg',
         flameTime: '471',
-        signIcon: "background-color: #0066ff"
+        signIcon: "background-color: #0066ff",
+        showImg: ''
       },
       {
         sign: '政策',
@@ -78,7 +72,8 @@ Page({
         time: '19小时前',
         img: '../../image/pic3.jpg',
         flameTime: '347',
-        signIcon: 'background-color: #ff0033'
+        signIcon: 'background-color: #ff0033',
+        showImg: ''
       },
       {
         sign: '百科',
@@ -87,7 +82,8 @@ Page({
         time: '15小时前',
         img: '../../image/pic9.jpg',
         flameTime: '1993',
-        signIcon: 'background-color: #ff0033'
+        signIcon: 'background-color: #ff0033',
+        showImg: ''
       },
       {
         sign: '',
@@ -96,7 +92,18 @@ Page({
         time: '3天前',
         img: '../../image/pic12.jpg',
         flameTime: '1594',
-        signIcon: "background-color: #0066ff"
+        signIcon: "background-color: #0066ff",
+        showImg: ''
+      },
+      {
+        sign: '',
+        title: "黄家湖新力帝泊湾，商业周边氛围",
+        author: '南昌大数据荐房',
+        time: '1天前',
+        img: '../../image/pic14.jpg',
+        flameTime: '',
+        signIcon: 'background-color: #ff0033',
+        seeTime: ''
       },
       {
         sign: '',
@@ -105,7 +112,8 @@ Page({
         time: '2020-10-16',
         img: '../../image/pic4.jpg',
         flameTime: '1.4万',
-        signIcon: 'background-color: #ff0033'
+        signIcon: 'background-color: #ff0033',
+        showImg: ''
       },
       {
         sign: '热门',
@@ -114,7 +122,8 @@ Page({
         time: '2020-11-05',
         img: '../../image/pic2.jpg',
         flameTime: '1.3万',
-        signIcon: 'background-color: #ff0033'
+        signIcon: 'background-color: #ff0033',
+        showImg: ''
       },
       {
         sign: '',
@@ -123,7 +132,8 @@ Page({
         time: '18小时前',
         img: '../../image/pic13.jpg',
         flameTime: '591',
-        signIcon: "background-color: #0066ff"
+        signIcon: "background-color: #0066ff",
+        showImg: ''
       },
       {
         sign: '市场',
@@ -132,7 +142,8 @@ Page({
         time: '17小时前',
         img: '../../image/pic6.jpg',
         flameTime: '700',
-        signIcon: 'background-color: #ff0033'
+        signIcon: 'background-color: #ff0033',
+        showImg: ''
       },
       {
         sign: '热门',
@@ -141,7 +152,8 @@ Page({
         time: '2020-10-28',
         img: '../../image/pic7.jpg',
         flameTime: '8万',
-        signIcon: 'background-color: #ff0033'
+        signIcon: 'background-color: #ff0033',
+        showImg: ''
       },
       {
         sign: '',
@@ -150,7 +162,66 @@ Page({
         time: '2020-11-05',
         img: '../../image/pic8.jpg',
         flameTime: '10万+',
-        signIcon: 'background-color: #ff0033'
+        signIcon: 'background-color: #ff0033',
+        showImg: ''
+      }
+    ],
+    quotation: [
+      {
+        title: "恒大终止重组深深房，释放了什么信号？",
+        author: '国民经略',
+        time: '14小时前',
+        img: '../../image/pic1.jpg',
+        flameTime: '2708',
+      },
+      {
+        title: "燕郊物业 “向前看”",
+        author: '地产更新',
+        time: '5天前',
+        img: '../../image/pic16.png',
+        flameTime: '948',
+      },
+      {
+        title: "5年内，房产税能出来吗？财政部：继续稳步推进，传递了啥信号",
+        author: '光宇吐楼市',
+        time: '1小时前',
+        img: '../../image/pic18.png',
+        flameTime: '572',
+      },
+      {
+        title: "2020年10月北京住宅各区成交排名",
+        author: '地产营销人',
+        time: '2天前',
+        img: '../../image/pic19.png',
+        flameTime: '351',
+      },
+      {
+        title: "十月热门小区出炉，你关注的是不是榜上有名",
+        author: '北京好房',
+        time: '1天前',
+        img: '../../image/pic21.png',
+        flameTime: '3429',
+      },
+      {
+        title: "央行透露楼市玄机，全国各地银行已出手，对房地产有多少影响？",
+        author: '光宇吐楼市',
+        time: '2020-10-22',
+        img: '../../image/pic22.png',
+        flameTime: '10万+',
+      },
+      {
+        title: "贝壳研究院：上周北京新房住宅市场成交面积16.8万平环比降",
+        author: '中国网地产',
+        time: '1天前',
+        img: '../../image/pic23.png',
+        flameTime: '314',
+      },
+      {
+        title: "房价 “万元时代” 来了，你还在等着跌吗？",
+        author: '楼市相对论',
+        time: '2020-11-06',
+        img: '../../image/pic24.png',
+        flameTime: '10万+',
       }
     ]
   },
@@ -200,6 +271,12 @@ Page({
         let temp = "allFound[" + index + "].signIcon"
         this.setData({
           [temp]: 'display: none'
+        })
+      }
+      if (item.flameTime == '') {
+        let temp = "allFound[" + index + "].seeTime"
+        this.setData({
+          [temp]: 'display: none;',
         })
       }
     })
