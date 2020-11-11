@@ -7,9 +7,6 @@
 .found .found-item {
     display: flex;
     justify-content: space-between;
-    /* padding: 20rpx 0; */
-    /* position: relative; */
-    /* height: 200rpx; */
 }
 
 .found-item-content{

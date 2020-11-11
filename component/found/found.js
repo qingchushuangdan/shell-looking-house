@@ -14,7 +14,7 @@ Component({
      * 组件的初始数据
      */
     data: {
-
+        
     },
 
     /**
@@ -42,6 +42,12 @@ Component({
                 let temp = "allFound[" + index + "].signIcon"
                 this.setData({
                   [temp]: 'background-color: #66cc33'
+                })
+              }
+              if (item.sign == '') {
+                let temp = "allFound[" + index + "].signIcon"
+                this.setData({
+                  [temp]: 'display: none'
                 })
               }
             })

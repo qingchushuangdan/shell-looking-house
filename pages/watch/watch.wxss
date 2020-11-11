@@ -5,11 +5,14 @@
 }
 
 .view-tab {
+    width: 94%;
     /* border: 1px solid #000; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    background-color: #fff;
+    z-index: 2;
 }
 
 .swiper-tab {
@@ -62,6 +65,7 @@
 .content{
     /* border: 1px solid #000; */
     padding-top: 80rpx;
+    z-index: 1;
 }
 
 .found {
