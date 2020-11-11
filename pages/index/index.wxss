@@ -57,7 +57,7 @@
 .body-third_contentRightIn{
     margin: 20rpx 0 20rpx 20rpx;
 }
-.body-thirf_contentTitle{
+.body-third_contentTitle{
     font-size: 31rpx;
     font-weight: 700;
 }
@@ -199,8 +199,8 @@
     width: 160rpx;
     height: 160rpx;
     position: absolute;
-    right: 10rpx;
-    bottom: 10rpx;
+    right: 5rpx;
+    bottom: 5rpx;
 }
 .body-eight{
     margin: 0 50rpx 50rpx 50rpx;
@@ -213,6 +213,7 @@
     margin-top: 20rpx;
     border: 3rpx solid #CCCCCC;
     border-radius: 10rpx;
+    position: relative;
 }
 .body-eight_context{
     margin: 35rpx 0 25rpx 35rpx;
@@ -259,4 +260,59 @@
 }
 .body-nine_content{
     margin-top: 30rpx;
+    display: flex;
+}
+.body-nine_contentRight{
+    margin-left: 20rpx;
+    margin-top: -5rpx;
+}
+.body-nine_Title{
+    font-size: 34rpx;
+    font-weight: 700;
+}
+.body-nine_Detail{
+    font-size: 22rpx;
+    color: #474747;
+    margin-top: 20rpx;
+}
+.body-nine_Price{
+    display: flex;
+    margin-top: 20rpx;
+}
+.body-nine_AllPrice{
+    font-size: 28rpx;
+    font-weight: 700;
+    color: red;
+}
+.body-nine_SinglePrice{
+    font-size: 24rpx;
+    color: #BBBBBB;
+    margin: 5rpx 0 0 15rpx;
+}
+.body-ten{
+    margin: 0 50rpx 50rpx 50rpx;
+    position: relative;
+}
+.body-ten>button{
+    background-color: #F3F6FD;
+    border: none;
+    color: #4368EE;
+    font-weight: 700;
+}
+.body-ten_Title{
+    font-size: 34rpx;
+    font-weight: 700;
+    display: flex;
+}
+.body-nine_titleRight{
+    padding: 0 10rpx;
+    border: 1px solid #2D75F1;
+    line-height: 40rpx;
+    font-size: 22rpx;
+    background-color: #2D75F1;
+    color: white;
+    border-radius: 10rpx;
+    position: absolute;
+    right: 50rpx;
+
 }

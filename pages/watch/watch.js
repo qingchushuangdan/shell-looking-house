@@ -6,6 +6,7 @@ Page({
    */
   data: {
     currentTab: 1,
+    height: '',
     allFound: [
       // {
       //   sign: '',
@@ -76,28 +77,28 @@ Page({
         // signIcon: "#0066ff"
       },
       {
-        sign: '热门',
-        title: "金秋十月购好房，7日新上，总价最低82万",
-        author: '南昌有贝壳',
-        time: '2020-10-16',
-        img: '../../image/pic4.jpg',
-        flameTime: '1.4万'
+        sign: '市场',
+        title: "房企被三道红线打回同一起跑线，“活下去” 3招，降价回款最关键",
+        author: '光宇吐楼市',
+        time: '17小时前',
+        img: '../../image/pic6.jpg',
+        flameTime: '700'
       },
       {
         sign: '热门',
-        title: "金秋十月购好房，7日新上，总价最低82万",
-        author: '南昌有贝壳',
-        time: '2020-10-16',
-        img: '../../image/pic4.jpg',
-        flameTime: '1.4万'
+        title: "10月第四周|成交量总体趋稳，成交均价普遍下行",
+        author: '现领观察',
+        time: '2020-10-28',
+        img: '../../image/pic7.jpg',
+        flameTime: '8万'
       },
       {
         sign: '热门',
-        title: "金秋十月购好房，7日新上，总价最低82万",
-        author: '南昌有贝壳',
-        time: '2020-10-16',
-        img: '../../image/pic4.jpg',
-        flameTime: '1.4万'
+        title: "39年来首次！这四个字眼消失，人口政策大逆转？",
+        author: '国民经略',
+        time: '2020-11-05',
+        img: '../../image/pic8.jpg',
+        flameTime: '10万+'
       }
     ]
   },
@@ -137,7 +138,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    // console.log(this.data.allFound.length)
+    let line = this.data.allFound.length
+    this.setData({
+      height: 40 + 115 * line
+    })
+    // console.log(this.data.height)
   },
 
   /**

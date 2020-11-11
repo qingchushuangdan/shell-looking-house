@@ -1,17 +1,28 @@
 {
+<<<<<<< HEAD
   "pages": [
     "pages/me/me",
     "pages/rent/rent",
     "pages/money/money",
+=======
+  "pages":[
+>>>>>>> 5adeb09d2ceecc69dc755b79a410c02fea641dec
     "pages/index/index",
     "pages/watch/watch",
+    "pages/me/me",
     "pages/news/news",
     "pages/follow/follow",
     "pages/love/love",
+<<<<<<< HEAD
     "pages/scan/scan",
     "pages/subscribe/subscribe",
     "pages/rent/index/index",
     "pages/rent/page/index/index"
+=======
+    "pages/money/money",
+    "pages/subscribe/subscribe",
+    "pages/scan/scan"
+>>>>>>> 5adeb09d2ceecc69dc755b79a410c02fea641dec
   ],
   "window": {
     "backgroundTextStyle": "light",
