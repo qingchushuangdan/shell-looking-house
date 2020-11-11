@@ -8,13 +8,23 @@ Page({
     currentTab: 1,
     height: '',
     allFound: [
+      {
+        sign: '',
+        title: "2020最具高级感的饰面，不是实木，不是石材，而是来自西班牙的...",
+        author: '筑客HOME',
+        time: '2天前',
+        img: '../../image/pic10.jpg',
+        flameTime: '5033',
+        signIcon: 'background-color: #ff0033'
+      },
       // {
       //   sign: '',
       //   title: "人生的第一个10万，该如何理财",
       //   author: '菜鸟理财',
       //   time: '13小时前',
       //   img: '',
-      //   flameTime: '3826'
+      //   flameTime: '3826',
+      //   signIcon: 'background-color: #ff0033'
       // },
       // {
       //   sign: '百科',
@@ -22,7 +32,8 @@ Page({
       //   author: '眼里只有房',
       //   time: '12小时前',
       //   img: '',
-      //   flameTime: '4224'
+      //   flameTime: '4224',
+      //   signIcon: 'background-color: #ff0033'
       // },
       {
         sign: '市场',
@@ -31,17 +42,17 @@ Page({
         time: '14小时前',
         img: '../../image/pic1.jpg',
         flameTime: '2708',
-        // signIcon: "#0066ff"
+        signIcon: 'background-color: #ff0033'
       },
-      // {
-      //   sign: '',
-      //   title: "【装修专项】水槽怎么选？",
-      //   author: '合肥飞墨设计',
-      //   time: '18小时前',
-      //   img: '../../image/pic5.jpg',
-      //   flameTime: '591',
-      //   // signIcon: "#0066ff"
-      // },
+      {
+        sign: '',
+        title: "【装修专项】水槽怎么选？",
+        author: '合肥飞墨设计',
+        time: '18小时前',
+        img: '../../image/pic5.jpg',
+        flameTime: '591',
+        signIcon: "background-color: #0066ff"
+      },
       {
         sign: '热门',
         title: "蚂蚁集团上市被叫停，人民日报等官媒集体力挺",
@@ -49,7 +60,16 @@ Page({
         time: '2020-11-05',
         img: '../../image/pic2.jpg',
         flameTime: '1.3万',
-        // signIcon: "#0066ff"
+        signIcon: 'background-color: #ff0033'
+      },
+      {
+        sign: '',
+        title: "灵感家|这抹绿色绝了！开放式厨房、观景阳台、步入衣帽间大气优雅",
+        author: '住范儿',
+        time: '2天前',
+        img: '../../image/pic11.jpg',
+        flameTime: '471',
+        signIcon: "background-color: #0066ff"
       },
       {
         sign: '政策',
@@ -57,15 +77,35 @@ Page({
         author: '豆丁施工',
         time: '19小时前',
         img: '../../image/pic3.jpg',
-        flameTime: '347'
+        flameTime: '347',
+        signIcon: 'background-color: #ff0033'
       },
       {
-        sign: '热门',
+        sign: '百科',
+        title: "父母赠送房产给子女，免征契税",
+        author: '俺家住楼房',
+        time: '15小时前',
+        img: '../../image/pic9.jpg',
+        flameTime: '1993',
+        signIcon: 'background-color: #ff0033'
+      },
+      {
+        sign: '',
+        title: "2020年1-10月房企销售目标完成率排行榜",
+        author: '地产人言',
+        time: '3天前',
+        img: '../../image/pic12.jpg',
+        flameTime: '1594',
+        signIcon: "background-color: #0066ff"
+      },
+      {
+        sign: '',
         title: "金秋十月购好房，7日新上，总价最低82万",
         author: '南昌有贝壳',
         time: '2020-10-16',
         img: '../../image/pic4.jpg',
-        flameTime: '1.4万'
+        flameTime: '1.4万',
+        signIcon: 'background-color: #ff0033'
       },
       {
         sign: '热门',
@@ -74,7 +114,16 @@ Page({
         time: '2020-11-05',
         img: '../../image/pic2.jpg',
         flameTime: '1.3万',
-        // signIcon: "#0066ff"
+        signIcon: 'background-color: #ff0033'
+      },
+      {
+        sign: '',
+        title: "【装修专项】水槽怎么选？",
+        author: '合肥飞墨设计',
+        time: '18小时前',
+        img: '../../image/pic13.jpg',
+        flameTime: '591',
+        signIcon: "background-color: #0066ff"
       },
       {
         sign: '市场',
@@ -82,7 +131,8 @@ Page({
         author: '光宇吐楼市',
         time: '17小时前',
         img: '../../image/pic6.jpg',
-        flameTime: '700'
+        flameTime: '700',
+        signIcon: 'background-color: #ff0033'
       },
       {
         sign: '热门',
@@ -90,15 +140,17 @@ Page({
         author: '现领观察',
         time: '2020-10-28',
         img: '../../image/pic7.jpg',
-        flameTime: '8万'
+        flameTime: '8万',
+        signIcon: 'background-color: #ff0033'
       },
       {
-        sign: '热门',
+        sign: '',
         title: "39年来首次！这四个字眼消失，人口政策大逆转？",
         author: '国民经略',
         time: '2020-11-05',
         img: '../../image/pic8.jpg',
-        flameTime: '10万+'
+        flameTime: '10万+',
+        signIcon: 'background-color: #ff0033'
       }
     ]
   },
@@ -121,18 +173,37 @@ Page({
     })
   },
 
-  // changeColor: function (e) {
-  //   var that = this
-  //   let found = that.data.allFound
-  //   console.log(found)
-  //   for (let i = 0; i < found.length; i++) {
-  //     if (found[i].sign === '市场') {
-  //       that.setData({
-  //         signIcon: "#ff8800"
-  //       })
-  //     }
-  //   }
-  // },
+  changeColor: function (e) {
+    var that = this 
+    let arr = that.data.allFound
+    arr.forEach((item, index) => {
+      // console.log(item.sign)
+      if (item.sign == '市场') {
+        let temp = "allFound[" + index + "].signIcon"
+        this.setData({
+          [temp]: 'background-color: #ff8800'
+        })
+      }
+      if (item.sign == '百科') {
+        let temp = "allFound[" + index + "].signIcon"
+        this.setData({
+          [temp]: 'background-color: #0066ff'
+        })
+      }
+      if (item.sign == '政策') {
+        let temp = "allFound[" + index + "].signIcon"
+        this.setData({
+          [temp]: 'background-color: #66cc33'
+        })
+      }
+      if (item.sign == '') {
+        let temp = "allFound[" + index + "].signIcon"
+        this.setData({
+          [temp]: 'display: none'
+        })
+      }
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -144,6 +215,7 @@ Page({
       height: 40 + 115 * line
     })
     // console.log(this.data.height)
+    this.changeColor()
   },
 
   /**
