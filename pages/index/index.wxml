@@ -86,7 +86,7 @@
 		<view class="body-third_content">
 			<view class="body-third_contentLeft">
 				<view class="body-third_contentLeftIn">
-					<view class="body-thirf_contentTitle">
+					<view class="body-third_contentTitle">
 						房贷计算
 					</view>
 					<view class="body-third_contentText">
@@ -103,7 +103,7 @@
 			</view>
 			<view class="body-third_contentRight">
 				<view class="body-third_contentRightIn">
-					<view class="body-thirf_contentTitle">
+					<view class="body-third_contentTitle">
 						购房资质
 					</view>
 					<view class="body-third_contentText">
@@ -285,17 +285,112 @@
 					<button class="body-eight_button">同意</button>
 				</view>
 			</view>
+			<image class="houseicon" src="/image/building.png"></image>
+
 		</view>
 	</view>
 	<view class="body-nine">
 		<view class="body-nine_title">
 			猜你喜欢的二手房
 		</view>
-		<view class="body-nine_content">
+		<view
+		 class="body-nine_content"
+		 wx:for="{{LoveSecondHouse}}"
+		 wx:key="index"
+		>
 			<view class="body-nine_contentLeft">
-				<image class="body-nine_image" src="/image/secondHouse3.jpg"></image>
+				<image class="body-nine_image" src="{{item.image}}"></image>
+			</view>
+			<view class="body-nine_contentRight">
+				<view class="body-nine_Title">
+					{{item.title}}
+				</view>
+				<view class="body-nine_Detail">
+					{{item.detail}}
+				</view>
+				<view class="body-nine_Price">
+					<view class="body-nine_AllPrice">
+						{{item.allPrice}}万
+					</view>
+					<view class="body-nine_SinglePrice">
+						{{item.singlePrice}}元/平
+					</view>
+				</view>
 			</view>
 		</view>
+	</view>
+	<view class="body-ten">
+		<button>查看更多二手房</button>
+	</view>
+	<view class="body-nine">
+		<view class="body-nine_title">
+			猜你喜欢的新房
+		</view>
+		<view
+		 class="body-nine_content"
+		 wx:for="{{loveNewHouse}}"
+		 wx:key="index"
+		>
+			<view class="body-nine_contentLeft">
+				<image class="body-nine_image" src="{{item.image}}"></image>
+			</view>
+			<view class="body-nine_contentRight">
+				<view class="body-ten_Title">
+					<view class="body-nine_titleLeft">
+						{{item.title}}
+					</view>
+					<view class="body-nine_titleRight">
+						在售
+					</view>
+				</view>
+				<view class="body-nine_Detail">
+					{{item.address}}
+				</view>
+				<view class="body-nine_Price">
+					<view class="body-nine_AllPrice">
+						{{item.price}}
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="body-ten">
+		<button>查看更多新房</button>
+	</view>
+	<view class="body-nine">
+		<view class="body-nine_title">
+			猜你喜欢的租房
+		</view>
+		<view
+		 class="body-nine_content"
+		 wx:for="{{rentHouse}}"
+		 wx:key="index"
+		>
+			<view class="body-nine_contentLeft">
+				<image class="body-nine_image" src="{{item.image}}"></image>
+			</view>
+			<view class="body-nine_contentRight">
+				<view class="body-ten_Title">
+					<view class="body-nine_titleLeft">
+						{{item.title}}
+					</view>
+					<view class="body-nine_titleRight">
+						在租
+					</view>
+				</view>
+				<view class="body-nine_Detail">
+					{{item.detail}}
+				</view>
+				<view class="body-nine_Price">
+					<view class="body-nine_AllPrice">
+						{{item.price}}元
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<view class="body-ten">
+		<button>查看更多租房</button>
 	</view>
 </view>
 
