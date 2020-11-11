@@ -27,7 +27,7 @@
         <p class="text">我的交易</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "rent">
         <image class="img3" src="../../image/rent.png"></image>
         <p class="text">我的租约</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>

@@ -8,6 +8,7 @@
 }
 p.text{
     color: #ffffff;
+    font-size: 30rpx;
 }
 .img{
     width: 50rpx;
@@ -17,8 +18,8 @@ p.text{
 .money{
     font-size: 50px;
     color: #ffffff;
-    padding-bottom: 40rpx;
-    padding-top: 20rpx;
+    padding-bottom: 50rpx;
+    padding-top: 15rpx;
 }
 .safe{
     background-color: #EAF1FF;
@@ -26,6 +27,7 @@ p.text{
     position: relative;
 }
 .info{
+    font-size: 27rpx;
     flex: 5;
     color: #222222;
     padding-left: 40rpx;
@@ -33,6 +35,7 @@ p.text{
     margin-bottom: 15rpx;
 }
 .identify{
+    font-size: 27rpx;
     width: 120rpx;
     height: 40rpx; 
     flex: 1;
@@ -44,4 +47,97 @@ p.text{
     right: 40rpx;
     top: 13rpx;
 }
+.content{
+    display: flex;
+    text-align: center;
+    margin-bottom: 40rpx;
+}
+.bankcard{
+    flex: 1;
+}
+.bill{
+    flex: 1;
+}
+.check{
+    flex: 1;
+}
+.img2{
+    width: 50rpx;
+    height: 50rpx;
+    margin-top: 50rpx;
+    margin-bottom: 20rpx;
+} 
+p.text1{
+    display: block;
+    font-size: 28rpx;
+}
+.finance{
+    padding-left: 40rpx;
+}
+.all{
+    line-height: 40rpx;
+    width: 120rpx;
+    height: 40rpx;
+    color: #ffffff;
+    background-color: #2E72F6;
+    border: #2E72F6 1px solid;
+    border-radius: 25rpx;
+    text-align: center;
+    font-size: 25rpx;
+    margin-top: 20rpx;
+    display: inline-block;
+}
+.server{
+    width: 120rpx;
+    height: 40rpx; 
+    line-height: 40rpx;
+    background-color: #ffffff;
+    border: #F8F8F8 1px solid;
+    border-radius: 25rpx;
+    text-align: center;
+    font-size: 25rpx;
+    display: inline-block;
+    margin-left: 20rpx;
+}
+.footer{
+    display: flex;
+    margin: 30rpx;
+}
+.footer_left{
+    align-items: center;
+    margin-right: 20rpx;
+    width: 100rpx;
+    height: 100rpx;
+    display: flex;
+    flex: 1;
+    background-color: #F8F0EE;
+}
+.footer_left__box{
+    margin-left: 20rpx;
+}
+.footer_text2{
+    display: block;
+    color: #A1A1A1;
+    font-size: 20rpx;
+}
+p.text2{
+    font-size: 28rpx;
+}
+.footer_right{
+    align-items: center;
+    width: 100rpx;
+    height: 100rpx;
+    display: flex;
+    flex: 1;
+    background-color: #F8F0EE;
+}
+.footer_right__box{
+    margin-left: 20rpx;
+}
+.img3{
+    width: 60rpx;
+    height: 60rpx;
+    padding-left: 15rpx;
+}
+
 

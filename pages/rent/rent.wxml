@@ -1,0 +1,33 @@
+<!--pages/rent/rent.wxml-->
+<view class="header">
+    <image class="img" src="../../image/shell-pay.png"></image>
+</view>
+<view class="top">
+    <view class="top-title">
+        <p class="text1">我的租约</p>
+        <p class="text2">全部租约</p>
+    </view>
+    <view class="top-info">
+        <p class="text3">当前没有进行中的租约</p>
+    </view>
+    <view class="top-button">
+        <p class="text4">我要租房</p>
+    </view>
+</view>
+<view class="bottom">
+    <p class="text5">生活搬家</p>
+    <view class="bottom_infos">
+        <view class="info_left">
+            <image class="img1" src="../../image/move.png"></image>
+            <p class="text6">小面搬家</p>
+        </view>
+        <view class="info_middle">
+            <image class="img1" src="../../image/move.png"></image>
+            <p class="text6">金杯搬家</p>
+        </view>
+        <view class="info_right">
+            <image class="img1" src="../../image/move.png"></image>
+            <p class="text6">箱货搬家</p>
+        </view>
+    </view>
+</view>

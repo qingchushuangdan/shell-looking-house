@@ -1,4 +1,4 @@
-// pages/me/me.js
+// pages/rent/index/index.js
 Page({
 
   /**
@@ -8,31 +8,6 @@ Page({
 
   },
 
-  subscribe:function(){
-    wx.navigateTo({
-      url: '../subscribe/subscribe'
-    })
-  },
-  love:function(){
-    wx.navigateTo({
-      url: '../love/love'
-    })
-  },
-  scan:function(){
-    wx.navigateTo({
-      url: '../scan/scan'
-    })
-  },
-  money:function(){
-    wx.navigateTo({
-      url: '../money/money'
-    })
-  },
-  rent:function(){
-    wx.navigateTo({
-      url: '../rent/rent'
-    })
-  },
   /**
    * 生命周期函数--监听页面加载
    */

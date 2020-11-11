@@ -1,12 +1,12 @@
-<!-- pages/money/money.wxml -->
+
 <view class="header">
-        <view class="desc">
-            <p class="text">账户余额(元)</p>
-            <image class="img" src="../../image/eyes.png" style="vertical-align:middle"/>
-        </view>
-        <view class="money">
-            <p>0.00</p>
-        </view>
+    <view class="desc">
+        <p class="text">账户余额(元)</p>
+        <image class="img" src="../../image/eyes.png" style="vertical-align:middle" />
+    </view>
+    <view class="money">
+        <p>0.00</p>
+    </view>
 </view>
 <view class="safe">
     <view class="info">
@@ -17,16 +17,39 @@
     </view>
 </view>
 <view class="content">
-    <view class="subscribe" bindtap = "subscribe">
-        <image class="img2" src="../../image/subscribe.png" />
-        <p>银行卡</p>
+    <view class="bankcard">
+        <image class="img2" src="../../image/card.png" />
+        <p class="text1">银行卡</p>
     </view>
-    <view class="love" bindtap = "love">
-        <image class="img2" src="../../image/love.png" />
-        <p>账单</p>
+    <view class="bill" bindtap="love">
+        <image class="img2" src="../../image/bill.png" />
+        <p class="text1">账单</p>
     </view>
-    <view class="scan" bindtap = "scan">
-        <image class="img2" src="../../image/scan.png" />
-        <p>支付设置</p>
+    <view class="check" bindtap="scan">
+        <image class="img2" src="../../image/check.png" />
+        <p class="text1">支付设置</p>
+    </view>
+</view>
+<view class="finance">
+    <p>金融服务</p>
+    <view class="box">
+        <view class="all">全部</view>
+        <view class="server">业主服务</view>
+    </view>
+</view>
+<view class="footer">
+    <view class="footer_left">
+        <image class="img3" src="../../image/balance.png" />
+        <view class="footer_left__box">
+            <p class="text2">尾款提前收</p>
+            <p class="footer_text2">安心收</p>
+        </view>
+    </view>
+    <view class="footer_right">
+        <image class="img3" src="../../image/house-safe.png" />
+        <view class="footer_right__box">
+            <p class="text2">轻松解抵押</p>
+            <p class="footer_text2">安心赎</p>
+        </view>
     </view>
 </view>

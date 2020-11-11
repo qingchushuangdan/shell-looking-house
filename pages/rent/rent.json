@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "page/index/index"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "../../image/rent-index.png",
+        "selectedIconPath": "../../image/rent-index.png"
+      },
+      {
+        "pagePath": "pages/heart/heart",
+        "text": "心愿单",
+        "iconPath": "../../image/Follow.png",
+        "selectedIconPath": "../../image/Follow.png"
+      },
+      {
+        "pagePath": "pages/rent/rent",
+        "text": "租约",
+        "iconPath": "../../image/rack-rent.png",
+        "selectedIconPath": "../../image/rack-rent.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "业主",
+        "iconPath": "../../image/join.png",
+        "selectedIconPath": "../../image/join.png"
+      }
+    ]
+  }
+}
