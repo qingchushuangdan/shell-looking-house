@@ -1,12 +1,37 @@
 // pages/watch/watch.js
+// const pagenumber = 1
+// const pagesize = 6
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    currentTab: 1,
-    height: '',
+    currentIdx: 0,
+    currentTab: 0,
+    height: 0,
+    navScrollLeft: 0,
+    tabItem: ['好房', '发现', '行情', '踩盘'],
+    navData: [
+      {
+        title: '必看二手',
+        classification: '精选房源'
+      },
+      {
+        title: '优选新房',
+        classification: '热门好盘'
+      },
+      {
+        title: '品质租房',
+        classification: '整租合租'
+      },
+      {
+        title: '海外好房',
+        classification: '全球置业'
+      }
+  ],
+    // loadMore: false, //"上拉加载"的变量，默认false，隐藏  
+    loadAll: false, //“没有数据”的变量，默认false，隐藏  
     allFound: [
       {
         sign: '',
@@ -390,14 +415,30 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    
   },
 
   /**
    * 页面上拉触底事件的处理函数
    */
   onReachBottom: function () {
+    // console.log("上拉触底事件")
+    // let that = this
+    // if (!that.data.loadMore) {
+    //   that.setData({
+    //     loadMore: true, //加载中  
+    //     loadAll: false //是否加载完所有数据
+    //   });
 
+    //   //加载更多，这里做下延时加载
+    //   setTimeout(function() {
+    //     that.getData()
+    //   }, 2000)
+    // }
+    this.setData({
+      // loadMore: false,
+      loadAll: true
+    })
   },
 
   /**
