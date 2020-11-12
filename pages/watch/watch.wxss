@@ -68,7 +68,7 @@
     z-index: 1;
 }
 
-.found {
+/* .found {
     padding: 20rpx 0;
     border-bottom: 1px solid #ccc;
 }
@@ -148,11 +148,12 @@
     position: absolute;
     font-size: 24rpx;
     text-align: center;
-}
+} */
 
 .end {
-    height: 60rpx;
+    height: 80rpx;
     /* border: 1px solid #000; */
     text-align: center;
-    font-size: 24rpx;
+    font-size: 28rpx;
+    line-height: 80rpx;
 }

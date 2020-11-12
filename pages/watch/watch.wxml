@@ -52,7 +52,7 @@
 				 wx:key="index"
 				 allFound="{{item}}"
 				></found>
-				<view class="end">没有更多数据了...</view>
+				<view class="end">没有更多数据了~</view>
 			</scroll-view>
 		</swiper-item>
 		<swiper-item>
@@ -62,40 +62,17 @@
 				 wx:key="index"
 				 quotation="{{item}}"
 				></quotation>
+				<view class="end">没有更多数据了~</view>
 			</scroll-view>
 		</swiper-item>
 		<swiper-item>
 			<scroll-view scroll-y="true" style="height:{{height}}rpx">
-				<view
-				 class="found"
-				 wx:for="{{allFound}}"
+				<plate
+				 wx:for="{{plate}}"
 				 wx:key="index"
-				>
-					<view class="found-item">
-						<view class="found-item-content">
-							<view class="found-item-content-title">
-								<view
-								 bindtap="changeColor"
-								 class="icon"
-								 style="{{item.signIcon}}"
-								>{{item.sign}}
-								</view>
-								<text class="found-item-title">{{item.title}}</text>
-							</view>
-							<view class="found-item-authorTime">
-								<view class="found-item-author">{{item.author}}</view>
-								<view class="found-item-time">{{item.time}}</view>
-							</view>
-						</view>
-						<view class="found-item-pic">
-							<image class="pic" src="{{item.img}}" />
-							<view class="seeTime">
-								<image class="flame" src="../../image/flame.png" />
-								<text class="found-item-seeTimes">{{item.flameTime}}</text>
-							</view>
-						</view>
-					</view>
-				</view>
+				 plate="{{item}}"
+				></plate>
+				<view class="end">没有更多数据了~</view>
 			</scroll-view>
 		</swiper-item>
 	</swiper>

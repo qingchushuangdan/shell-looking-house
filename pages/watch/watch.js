@@ -223,6 +223,64 @@ Page({
         img: '../../image/pic24.png',
         flameTime: '10万+',
       }
+    ],
+    plate: [
+      {
+        title: "黑胡桃家具的搭配陷阱，99%的人中招，老曲教你如何避坑",
+        author: '居住进化论',
+        time: '19小时前',
+        img: '../../image/pic25.png',
+        flameTime: '1475',
+      },
+      {
+        title: "服了！进门不做隔断柜，无玄关照样美上天！",
+        author: '家居严选师',
+        time: '2天前',
+        img: '../../image/pic26.png',
+        flameTime: '4590',
+      },
+      {
+        title: "48平方米小户型的逆袭！塞下开放式厨房、储藏间，低甜度绿的清新",
+        author: '改造宅',
+        time: '2天前',
+        img: '../../image/pic27.png',
+        flameTime: '604',
+      },
+      {
+        title: "隐形门的3个大坑，想要极简家没那么简单",
+        author: '装个好房子',
+        time: '2020-11-05',
+        img: '../../image/pic28.png',
+        flameTime: '4.6万',
+      },
+      {
+        title: "现代摩登 多彩缤纷之家",
+        author: '家居在线',
+        time: '2020-11-09',
+        img: '../../image/pic29.png',
+        flameTime: '781',
+      },
+      {
+        title: "留啥客房？书房、多功能房不香么？",
+        author: '合肥飞墨设计',
+        time: '2020-11-04',
+        img: '../../image/pic30.png',
+        flameTime: '1845',
+      },
+      {
+        title: "看不到下午2点的太阳就算了，还让我对着马桶做饭 | 萌面户型",
+        author: '搜狐焦点',
+        time: '2020-10-30',
+        img: '../../image/pic31.png',
+        flameTime: '2514',
+      },
+      {
+        title: "LOFT是一种生活方式，这个150平方米的极致设计颠覆你的感官",
+        author: '筑客HOME',
+        time: '2020-11-05',
+        img: '../../image/pic32.png',
+        flameTime: '1.7万',
+      }
     ]
   },
 
@@ -235,6 +293,11 @@ Page({
         currentTab: e.target.dataset.current
       })
     }
+    wx.showToast({
+      title: '努力加载中...',
+      icon: 'loading',
+      duration: 500
+    })
   },
 
   swiperTab: function (e) {
