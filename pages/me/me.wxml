@@ -22,7 +22,7 @@
         <p class="text">我的钱包</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "pay">
         <image class="img3" src="../../image/pay.png"></image>
         <p class="text">我的交易</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
@@ -32,17 +32,17 @@
         <p class="text">我的租约</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "house">
         <image class="img3" src="../../image/house.png"></image>
         <p class="text">我的房子</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "coupon">
         <image class="img3" src="../../image/coupon.png"></image>
         <p class="text">我的优惠劵</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "order">
         <image class="img3" src="../../image/order.png"></image>
         <p class="text">意向金订单</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
@@ -62,22 +62,22 @@
         <p class="text">速收房款</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "home">
         <image class="img3" src="../../image/home.png"></image>
         <p class="text">我的家庭</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "integral">
         <image class="img3" src="../../image/integral.png"></image>
         <p class="text">我的积分</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "card">
         <image class="img3" src="../../image/card.png"></image>
         <p class="text">找房卡</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>
     </view>
-    <view class="box1">
+    <view class="box1" bindtap = "life">
         <image class="img3" src="../../image/life.png"></image>
         <p class="text">生活订单</p>
         <image class="img3_arrow" src="../../image/arrow.png"></image>

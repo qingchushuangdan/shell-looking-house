@@ -1,0 +1,28 @@
+<view class="box">
+    <view class="mine">
+        <image class="img" src="../../image/head.png" />
+        <p class="text">我</p>
+    </view>
+    <view class="mine">
+        <image class="img" src="../../image/add.png" />
+        <p class="text">添加新成员</p>
+    </view>
+</view>
+<view class="content">
+    <image class="img1" src="../../image/search.png" />
+    <p class="text1">添加喜欢的房源，支持评论、批量分享</p>
+    <p class="text1">与家人一起选房更方便</p>
+</view>
+<view class="footer">
+    <view class="footer_left">
+        <view class="info">
+            <p class="text2">添加房源</p>
+        </view>
+    </view>
+    <view class="footer_right">
+        <view class="info">
+            <p class="text3">发送微信好友</p>
+        </view>
+        
+    </view>
+</view>

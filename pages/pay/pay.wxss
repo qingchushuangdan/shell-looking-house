@@ -1,0 +1,7 @@
+/* pages/pay/pay.wxss */
+p{
+    text-align: center;
+    display: block;
+    margin: 50%;
+    font-size: 50rpx;
+}

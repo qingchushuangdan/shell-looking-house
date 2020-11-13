@@ -1,0 +1,86 @@
+<van-search
+ value="{{ value }}"
+ shape="round"
+ background="#fff"
+ placeholder="请输入楼盘名或区域"
+/>
+<view class="body-main">
+	<view class="body-one">
+		<view
+		 class="body-one_box"
+		 wx:for="{{iconHouse}}"
+		 wx:key="index"
+		>
+			<view class="body-one_image">
+				<image class="" src="{{item.image}}" />
+			</view>
+			<view class="body-one_text">
+				{{item.text}}
+			</view>
+		</view>
+	</view>
+	<swiper
+	 autoplay="{{true}}"
+	 interval="{{interval}}"
+	 circular="{{true}}"
+	 duration="{{duration}}"
+	 indicator-dots="{{false}}"
+	 indicator-active-color="#fff"
+	>
+		<block wx:for="{{imgUrls}}" wx:key="{{index}}">
+			<swiper-item>
+				<image class="slide-image" src="{{item}}"></image>
+			</swiper-item>
+		</block>
+	</swiper>
+	<view id="classification">
+		<view
+		 class="classification-item"
+		 wx:for="{{classfication}}"
+		 wx:key="index"
+		>
+			<view class="item-text">{{item.name}}</view>
+			<image class="item-image" src="/image/downArrow.png" />
+		</view>
+	</view>
+	<view class="body-label">
+		<view
+		 class="body-label_box"
+		 wx:for="{{label}}"
+		 wx:key="index"
+		>
+			<view class="body-label_text">
+				{{item.name}}
+			</view>
+		</view>
+
+	</view>
+	<view
+	 class="body-content"
+	 wx:for="{{newHouse}}"
+	 wx:key="index"
+	>
+		<view class="body-content_left">
+			<image class="image" src="{{item.image}}"></image>
+		</view>
+		<view class="body-content_right">
+			<view class="body-content_box">
+				<view class="body-content_title">{{item.title}}</view>
+				<view
+				 class="body-content_labelcodition"
+				 bindtap="changeColor"
+				 style="{{item.signIcon}}"
+				>{{item.labelcondition}}
+				</view>
+			</view>
+
+			<view class="body-content_address">{{item.address}}</view>
+			<view class="body-content_label"></view>
+			<view class="body-content_price">
+				<view class="body-content_singleprice">{{item.singleprice}}</view>
+				<view class="body-content_area">建面{{item.area}}m²</view>
+			</view>
+		</view>
+	</view>
+</view>
+

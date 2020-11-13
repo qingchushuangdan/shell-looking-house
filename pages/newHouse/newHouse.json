@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index"
+  },
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "贝壳新房",
+    "navigationBarTextStyle": "black",
+    "navigationBarBold": "bold"
+}

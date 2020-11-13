@@ -33,6 +33,46 @@ Page({
       url: '../rent/rent'
     })
   },
+  pay:function(){
+    wx.navigateTo({
+      url: '../pay/pay'
+    })
+  },
+  house:function(){
+    wx.navigateTo({
+      url: '../house/house'
+    })
+  },
+  coupon:function(){
+    wx.navigateTo({
+      url: '../coupon/coupon'
+    })
+  },
+  order:function(){
+    wx.navigateTo({
+      url: '../order/order'
+    })
+  },
+  home:function(){
+    wx.navigateTo({
+      url: '../home/home'
+    })
+  },
+  integral:function(){
+    wx.navigateTo({
+      url: '../integral/integral'
+    })
+  },
+  card:function(){
+    wx.navigateTo({
+      url: '../card/card'
+    })
+  },
+  life:function(){
+    wx.navigateTo({
+      url: '../life/life'
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
