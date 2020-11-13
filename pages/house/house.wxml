@@ -1,0 +1,24 @@
+<view class="header">
+    <view class="text1">添加我的房屋资产</view>
+    <view class="text2">随时掌握房屋估值走势与邻里动态</view>
+</view>
+<view class="content">
+    <view class="content_desc">
+        <p class="content_city">所在城市</p>
+        <p class="content_info">北京</p>
+        <image class="img_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="content_desc">
+        <p class="content_city">小区名称</p>
+        <p class="content_info__entry">请输入</p>
+        <image class="img_arrow" src="../../image/arrow.png"></image>
+    </view>
+    <view class="content_desc" wx:for="{{house}}" wx:key="index">
+        <p class="content_city">{{item.name}}</p>
+        <p class="content_info__choose">{{item.choose}}</p>
+        <image class="img_arrow" src="../../image/arrow.png"></image>
+    </view>
+</view>
+<view class="footer">
+    立即查看
+</view>
