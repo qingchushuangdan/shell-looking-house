@@ -75,7 +75,20 @@
 			</view>
 
 			<view class="body-content_address">{{item.address}}</view>
-			<view class="body-content_label"></view>
+			<view class="body-content_label">
+				<view class="body-content_labelbox">
+					{{item.labelbox.label1}}
+				</view>
+				<view class="body-content_labelbox">
+					{{item.labelbox.label2}}
+				</view>
+				<view class="body-content_labelbox">
+					{{item.labelbox.label3}}
+				</view>
+				<view class="body-content_labelbox">
+					{{item.labelbox.label4}}
+				</view>
+			</view>
 			<view class="body-content_price">
 				<view class="body-content_singleprice">{{item.singleprice}}</view>
 				<view class="body-content_area">建面{{item.area}}m²</view>
