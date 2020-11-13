@@ -18,7 +18,7 @@
 		</view>
 		<view class="found-item-pic">
 			<image class="pic" src="{{allFound.img}}" />
-			<view class="seeTime">
+			<view class="seeTime" style="{{allFound.seeTime}}">
 				<image class="flame" src="../../image/flame.png" />
 				<text class="found-item-seeTimes">{{allFound.flameTime}}</text>
 			</view>
