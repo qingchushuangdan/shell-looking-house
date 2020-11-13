@@ -782,7 +782,7 @@
 			</scroll-view>
 		</swiper-item>
 		<swiper-item>
-			<scroll-view scroll-y="true" style="height:{{height}}rpx">
+			<scroll-view scroll-y="true">
 				<quotation
 				 wx:for="{{quotation}}"
 				 wx:key="index"
@@ -792,7 +792,7 @@
 			</scroll-view>
 		</swiper-item>
 		<swiper-item>
-			<scroll-view scroll-y="true" style="height:{{height}}rpx">
+			<scroll-view scroll-y="true">
 				<plate
 				 wx:for="{{plate}}"
 				 wx:key="index"
