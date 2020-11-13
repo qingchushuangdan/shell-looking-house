@@ -147,8 +147,16 @@ Page({
         price: '1200'
       },
     ]
-
-
+  },
+  secondHouse:function(){
+    wx.navigateTo({
+      url: '../secondHouse/secondHouse'
+    })
+  },
+  newHouse:function(){
+    wx.navigateTo({
+      url: '../newHouse/newHouse'
+    })
   },
 
   /**

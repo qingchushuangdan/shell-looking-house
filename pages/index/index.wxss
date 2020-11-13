@@ -316,3 +316,7 @@
     right: 50rpx;
 
 }
+/* van-search{
+    position: absolute;
+    
+}  */
