@@ -1,6 +1,10 @@
 {
   "pages": [
+    "pages/newHouse/newHouse",
+    "pages/index/index",
+    "pages/secondHouse/secondHouse",
     "pages/me/me",
+<<<<<<< HEAD
     "pages/integral/integral",
     "pages/home/home",
     "pages/coupon/coupon",
@@ -8,15 +12,24 @@
     "pages/pay/pay",
     "pages/order/order",
     "pages/index/index",
+=======
+    "pages/rent/rent",
+    "pages/money/money",
+>>>>>>> 0b2436345d80eb26e8d3e7504936162ddeb52413
     "pages/watch/watch",
     "pages/news/news",
     "pages/follow/follow",
     "pages/love/love",
+<<<<<<< HEAD
     "pages/money/money",
     "pages/subscribe/subscribe",
     "pages/scan/scan",
     "pages/card/card",
     "pages/life/life"
+=======
+    "pages/scan/scan",
+    "pages/subscribe/subscribe"
+>>>>>>> 0b2436345d80eb26e8d3e7504936162ddeb52413
   ],
   "window": {
     "backgroundTextStyle": "light",

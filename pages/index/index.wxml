@@ -1,4 +1,5 @@
 <view class="main">
+	<van-search value="{{ value }}" placeholder="你想住在哪？" />
 	<swiper
 	 autoplay="{{true}}"
 	 interval="{{interval}}"
@@ -13,15 +14,16 @@
 			</swiper-item>
 		</block>
 	</swiper>
+
 	<view class="body-second">
 		<view class="body-second_contentFirst">
-			<view class="body-second_content">
+			<view class="body-second_content" bindtap="secondHouse">
 				<view class="body-second_iconout">
 					<image class="body-second_icon" src="/image/secondhouse1.png"></image>
 				</view>
 				<text class="body-second_text">二手房</text>
 			</view>
-			<view class="body-second_content">
+			<view class="body-second_content" bindtap="newHouse">
 				<view class="body-second_iconout">
 					<image class="body-second_icon" src="/image/secondhouse2.png"></image>
 				</view>

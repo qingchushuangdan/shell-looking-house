@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index"
+  },
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "房源列表",
+    "navigationBarTextStyle": "black",
+    "navigationBarBold": "bold"
+}

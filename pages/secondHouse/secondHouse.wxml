@@ -1,0 +1,43 @@
+<view class="body-main">
+	<van-search value="{{ value }}" placeholder="请输入小区或商圈名" />
+	<view id="classification">
+		<view
+		 class="classification-item"
+		 wx:for="{{classfication}}"
+		 wx:key="index"
+		>
+			<view class="item-text">{{item.name}}</view>
+			<image class="item-image" src="/image/downArrow.png" />
+		</view>
+	</view>
+	<view
+	 class="body-content"
+	 wx:for="{{secondHouse}}"
+	 wx:key="index"
+	>
+		<view class="body-content_left">
+			<image class="" src="{{item.image}}" />
+
+		</view>
+		<view class="body-content_right">
+			<view class="body-content_title">
+				{{item.title}}
+			</view>
+			<view class="body-content_detail">
+				{{item.detail}}
+			</view>
+			<view class="body-content_label">
+				{{item.label}}
+			</view>
+			<view class="body-content_price">
+				<view class="body-content_allPrice">
+					{{item.allPrice}}万
+				</view>
+				<view class="body-content_singlePrice">
+					{{item.singlePrice}}元/平
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+
