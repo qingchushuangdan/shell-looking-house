@@ -27,12 +27,11 @@
 	 bindchange="swiperTab"
 	 style="height:{{height}}rpx"
 	>
-		<swiper-item>
+		<swiper-item class="goodHouse">
 			<view class="house-container">
 				<scroll-view
 				 class="nav"
 				 scroll-x="true"
-				 scroll-left="{{navScrollLeft}}"
 				 scroll-with-animation="true"
 				>
 					<block
@@ -41,18 +40,736 @@
 					 wx:for-item="navItem"
 					 wx:key="idx"
 					>
-						<view
-						 class="nav-item {{currentIdx==idx?'active':''}}"
-						 data-current="{{idx}}"
-						 bindtap="switchNav"
-						>
-							<text class="navTitle">{{navItem.title}}</text>
-							<text class="classification">{{navItem.classification}}</text>
+						<view class="nav-house">
+							<view
+							 class="nav-item {{currentIdx==idx?'active':''}}"
+							 data-current="{{idx}}"
+							 bindtap="switchNav"
+							>
+								<view class="navTitle">{{navItem.title}}</view>
+								<view class="classification">{{navItem.classification}}</view>
+								<image class="img" src="{{navItem.img}}"></image>
+							</view>
 						</view>
 					</block>
-
 				</scroll-view>
 			</view>
+			<swiper
+			 class="good-house-tab"
+			 current="{{currentIdx}}"
+			 duration="300"
+			 bindchange="switchTab"
+			 style="height:{{houseHeight}}rpx"
+			>
+				<swiper-item class="good-house-content">
+					<scroll-view scroll-y="true">
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="end" hidden="{{!loadAll}}">没有更多数据了~</view>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item>
+					<scroll-view scroll-y="true">
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="end" hidden="{{!loadAll}}">没有更多数据了~</view>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item>
+					<scroll-view scroll-y="true">
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="end" hidden="{{!loadAll}}">没有更多数据了~</view>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item>
+					<scroll-view scroll-y="true">
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="house-message">
+							<view class="house-message-pic">
+								<view class="house-message-picOne">
+									<image class="picOne" src="../../image/goodHousePic1.jpg" />
+								</view>
+								<view class="house-message-picTwo">
+									<image class="picTwo housePic" src="../../image/goodHousePic2.jpg" />
+									<image class="picThree housePic" src="../../image/goodHousePic3.jpg" />
+								</view>
+							</view>
+							<view class="house-message-contant">
+								<view class="house-message-titlePrice">
+									<view class="house-message-title">
+										<view class="house-message-address">整租·联发君悦湖</view>
+										<view class="house-message-size">2室2厅1卫</view>
+									</view>
+									<view class="house-message-price">
+										<view class="price">2200元/月</view>
+									</view>
+								</view>
+								<view class="house-message-houseAddress">艾溪湖东/93m²</view>
+								<view class="house-message-dec">距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修</view>
+								<view class="house-message-provider">
+									<view class="provider">
+										<view class="provider-pic">
+											<image class="pro-pic" src="../../image/provider-pic.png"></image>
+										</view>
+										<view class="provider-message">
+											<view class="provider-name">刘枝</view>
+											<view class="provider-tip">房源详细信息找我咨询</view>
+										</view>
+									</view>
+									<view class="say-tel">
+										<view class="say">
+											<image class="pic-say pro-pic sayTel" src="../../image/say.png" />
+										</view>
+										<view class="tel">
+											<image class="pic-tel pro-pic sayTel" src="../../image/tel.png" />
+										</view>
+									</view>
+								</view>
+							</view>
+						</view>
+						<view class="end" hidden="{{!loadAll}}">没有更多数据了~</view>
+					</scroll-view>
+				</swiper-item>
+			</swiper>
 		</swiper-item>
 		<swiper-item>
 			<scroll-view scroll-y="true" style="height:{{height}}rpx">
@@ -65,7 +782,7 @@
 			</scroll-view>
 		</swiper-item>
 		<swiper-item>
-			<scroll-view scroll-y="true" style="height:{{height}}rpx">
+			<scroll-view scroll-y="true">
 				<quotation
 				 wx:for="{{quotation}}"
 				 wx:key="index"
@@ -75,7 +792,7 @@
 			</scroll-view>
 		</swiper-item>
 		<swiper-item>
-			<scroll-view scroll-y="true" style="height:{{height}}rpx">
+			<scroll-view scroll-y="true">
 				<plate
 				 wx:for="{{plate}}"
 				 wx:key="index"

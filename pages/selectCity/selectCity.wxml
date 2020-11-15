@@ -1,0 +1,4 @@
+<!--pages/selectCity/selectCity.wxml-->
+<van-picker columns="{{ columns }}" bind:change="onChange" />
+
+

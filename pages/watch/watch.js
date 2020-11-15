@@ -9,25 +9,29 @@ Page({
   data: {
     currentIdx: 0,
     currentTab: 0,
+    houseHeight: 4000,
     height: 0,
-    navScrollLeft: 0,
     tabItem: ['好房', '发现', '行情', '踩盘'],
     navData: [
       {
         title: '必看二手',
-        classification: '精选房源'
+        classification: '精选房源',
+        img: '../../image/goodHouse.png'
       },
       {
         title: '优选新房',
-        classification: '热门好盘'
+        classification: '热门好盘',
+        img: '../../image/goodHouse1.png'
       },
       {
         title: '品质租房',
-        classification: '整租合租'
+        classification: '整租合租',
+        img: '../../image/goodHouse2.png'
       },
       {
         title: '海外好房',
-        classification: '全球置业'
+        classification: '全球置业',
+        img: '../../image/goodHouse3.png'
       }
   ],
     // loadMore: false, //"上拉加载"的变量，默认false，隐藏  
@@ -325,10 +329,33 @@ Page({
     })
   },
 
+  switchNav: function (e) {
+    var cur = e.currentTarget.dataset.current
+    if (this.data.currentIdx == cur) {
+      return false
+    } else {
+      this.setData({
+        currentIdx: cur
+      })
+    }
+    wx.showToast({
+      title: '努力加载中...',
+      icon: 'loading',
+      duration: 500
+    })
+  },
+
   swiperTab: function (e) {
     var that = this
     that.setData({
       currentTab: e.detail.current
+    })
+  },
+
+  switchTab: function (e) {
+    var cur = e.detail.current
+    this.setData({
+      currentIdx: cur
     })
   },
 
@@ -381,6 +408,11 @@ Page({
     })
     // console.log(this.data.height)
     this.changeColor()
+
+    // let len = this.data.allFound.length
+    // this.setData({
+    //   houseHeight: 90 + 115 * len
+    // })
   },
 
   /**
