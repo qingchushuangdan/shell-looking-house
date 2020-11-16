@@ -158,6 +158,11 @@ Page({
       url: '../newHouse/newHouse'
     })
   },
+<<<<<<< HEAD
+  rentHouse:function(){
+    wx.navigateTo({
+      url: '../rentHouse/rentHouse'
+=======
   sendHouse:function(){
     wx.navigateTo({
       url: '../sendHouse/sendHouse'
@@ -166,6 +171,7 @@ Page({
   loans:function(){
     wx.navigateTo({
       url: '../loans/loans'
+>>>>>>> f5a5776c5ad84797504cc5ae21d073b131d77105
     })
   },
 

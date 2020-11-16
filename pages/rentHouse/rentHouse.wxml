@@ -1,0 +1,63 @@
+<van-search value="{{ value }}" placeholder="想住在哪儿？" label="南昌" />
+<view class="body-first">
+    <view class="body-first_contentFirst">
+        <view class="body-first_content" wx:for="{{house}}" wx:key="index">
+            <view class="body-first_iconout">
+                <image class="body-first_icon" src="{{item.image}}"></image>
+            </view>
+            <text class="body-first_text">{{item.name}}</text>
+        </view>
+    </view>
+    <view class="body-first_contentSecond">
+        <view class="body-first_content" wx:for="{{rent}}" wx:key="index">
+            <view class="body-first_iconout">
+                <image class="body-first_icon" src="{{item.image}}"></image>
+            </view>
+            <text class="body-first_text">{{item.name}}</text>
+        </view>
+    </view>
+</view>
+<view class="body-second">
+    <view class="body-second_content" wx:for="{{resource}}" wx:key="index">
+        <view class="body-second_text">{{item.name}}</view>
+        <view class="body-second_text1">{{item.search}}</view>
+    </view>
+</view>
+<view class="body-third">
+    <view class="body-third_text">
+        <view class="body-third_info">区域</view>
+        <view>
+            <image class="body-third_icon" src="/image/arrow-triangle.png"></image>
+        </view>
+    </view>
+
+    <view class="body-third_text">
+        <view class="body-third_info">方式</view>
+        <view>
+            <image class="body-third_icon" src="/image/arrow-triangle.png"></image>
+        </view>
+    </view>
+
+    <view class="body-third_text">
+        <view class="body-third_info">租金</view>
+        <view>
+            <image class="body-third_icon" src="/image/arrow-triangle.png"></image>
+        </view>
+    </view>
+
+    <view class="body-third_text">
+        <view class="body-third_info">筛选</view>
+        <view>
+            <image class="body-third_icon" src="/image/arrow-triangle.png"></image>
+        </view>
+    </view>
+
+    <view class="body-third_text">
+        <image class="body-third_icon1" src="/image/move_arrow.png"></image>
+    </view>
+</view>
+<view class="body-fourth">
+    <view class="body-fourth_content">
+        
+    </view>
+</view>
