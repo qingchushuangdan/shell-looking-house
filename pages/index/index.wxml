@@ -61,7 +61,7 @@
 				</view>
 				<text class="body-second_text">去估价</text>
 			</view>
-			<view class="body-second_content">
+			<view class="body-second_content" bindtap="loans">
 				<view class="body-second_iconout">
 					<image class="body-second_icon" src="/image/sum.png"></image>
 				</view>

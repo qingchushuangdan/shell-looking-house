@@ -2,47 +2,63 @@
 	<van-field
 	 value="南昌"
 	 label="城市"
+	 size="large"
 	 border="{{ true }}"
 	 is-link="{{true}}"
 	 bind:change="onChange"
 	 bindtap="selectCity"
+	 custom-style="font-weight:bold"
 	/>
 	<van-field
 	 label="小区名称"
 	 placeholder="请选择"
+	 size="large"
 	 border="{{ true }}"
 	 is-link="{{true}}"
 	 bind:change="onChange"
+	 custom-style="font-weight:bold"
 	/>
 	<van-field
 	 label="具体地址"
+	 size="large"
 	 border="{{ true }}"
 	 is-link="{{true}}"
 	 bind:change="onChange"
+	 custom-style="font-weight:bold"
 	/>
 	<van-field
 	 label="称呼"
+	 size="large"
 	 placeholder="如何称呼你"
 	 border="{{ true }}"
 	 bind:change="onChange"
+	 custom-style="font-weight:bold"
 	/>
 	<van-field
 	 label="联系方式"
+	 size="large"
 	 value="18779199669"
 	 border="{{ true }}"
 	 bind:change="onChange"
+	 custom-style="font-weight:bold"
 	/>
 	<van-field
 	 label="期望售价"
+	 size="large"
 	 placeholder="请输入期望售价"
 	 border="{{ true }}"
 	 bind:change="onChange"
+	 custom-style="font-weight:bold"
 	/>
 </van-cell-group>
-<van-button
- type="default"
- color="#2D75F1"
- size="large"
->默认按钮
-</van-button>
+<view class="text">您点击"确认发布"后，若您的房源通过了初步审核，将会有贝壳平台上的经纪人和您取得联系，并对您的房源进行再次核实，核实无误后将与您建立服务关系，贝壳平台仅提供信息展示和网络技术服务。</view>
+<view class="button">
+	<van-button
+	 type="default"
+	 color="#2D75F1"
+	 size="large"
+	 block="{{true}}"
+	>发布房源
+	</van-button>
+</view>
 
