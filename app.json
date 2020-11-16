@@ -1,33 +1,21 @@
 {
   "pages": [
     "pages/index/index",
-<<<<<<< HEAD
     "pages/rentHouse/rentHouse",
-=======
     "pages/loans/loans",
     "pages/sendHouse/sendHouse",
     "pages/watch/watch",
->>>>>>> f5a5776c5ad84797504cc5ae21d073b131d77105
     "pages/newHouse/newHouse",
     "pages/secondHouse/secondHouse",
     "pages/me/me",
     "pages/rent/rent",
     "pages/money/money",
-<<<<<<< HEAD
     "pages/watch/watch",
-=======
->>>>>>> f5a5776c5ad84797504cc5ae21d073b131d77105
     "pages/news/news",
     "pages/follow/follow",
     "pages/love/love",
     "pages/scan/scan",
-<<<<<<< HEAD
     "pages/subscribe/subscribe"
-=======
-    "pages/subscribe/subscribe",
-    "pages/viewHouse/viewHouse",
-    "pages/selectCity/selectCity"
->>>>>>> f5a5776c5ad84797504cc5ae21d073b131d77105
   ],
   "window": {
     "backgroundTextStyle": "light",
