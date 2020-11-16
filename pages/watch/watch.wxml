@@ -25,14 +25,13 @@
 	 current="{{currentTab}}"
 	 duration="300"
 	 bindchange="swiperTab"
-	 style="height:{{height}}rpx"
+	 style="height: {{height}}rpx;"
 	>
-		<swiper-item>
+		<swiper-item class="goodHouse">
 			<view class="house-container">
 				<scroll-view
 				 class="nav"
 				 scroll-x="true"
-				 scroll-left="{{navScrollLeft}}"
 				 scroll-with-animation="true"
 				>
 					<block
@@ -41,18 +40,68 @@
 					 wx:for-item="navItem"
 					 wx:key="idx"
 					>
-						<view
-						 class="nav-item {{currentIdx==idx?'active':''}}"
-						 data-current="{{idx}}"
-						 bindtap="switchNav"
-						>
-							<text class="navTitle">{{navItem.title}}</text>
-							<text class="classification">{{navItem.classification}}</text>
+						<view class="nav-house">
+							<view
+							 class="nav-item {{currentIdx==idx?'active':''}}"
+							 data-current="{{idx}}"
+							 bindtap="switchNav"
+							>
+								<view class="navTitle">{{navItem.title}}</view>
+								<view class="classification">{{navItem.classification}}</view>
+								<image class="img" src="{{navItem.img}}"></image>
+							</view>
 						</view>
 					</block>
-
 				</scroll-view>
 			</view>
+			<swiper
+			 class="good-house-tab"
+			 current="{{currentIdx}}"
+			 duration="300"
+			 bindchange="switchTab"
+			 style="height:{{houseHeight}}rpx"
+			>
+				<swiper-item class="good-house-content">
+					<scroll-view scroll-y="true" style="height:{{houseHeight}}rpx">
+						<housemessage
+						 wx:for="{{houseMessage}}"
+						 wx:key="index"
+						 houseMessage="{{item}}"
+						></housemessage>
+						<view class="end" hidden="{{!loadAll}}">没有更多数据了~</view>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item>
+					<scroll-view scroll-y="true" style="height:{{houseHeight}}rpx">
+						<housemessage
+						 wx:for="{{houseMessage}}"
+						 wx:key="index"
+						 houseMessage="{{item}}"
+						></housemessage>
+						<view class="end" hidden="{{!loadAll}}">没有更多数据了~</view>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item>
+					<scroll-view scroll-y="true" style="height:{{houseHeight}}rpx">
+						<housemessage
+						 wx:for="{{houseMessage}}"
+						 wx:key="index"
+						 houseMessage="{{item}}"
+						></housemessage>
+						<view class="end" hidden="{{!loadAll}}">没有更多数据了~</view>
+					</scroll-view>
+				</swiper-item>
+				<swiper-item>
+					<scroll-view scroll-y="true" style="height:{{houseHeight}}rpx">
+						<housemessage
+						 wx:for="{{houseMessage}}"
+						 wx:key="index"
+						 houseMessage="{{item}}"
+						></housemessage>
+						<view class="end" hidden="{{!loadAll}}">没有更多数据了~</view>
+					</scroll-view>
+				</swiper-item>
+			</swiper>
 		</swiper-item>
 		<swiper-item>
 			<scroll-view scroll-y="true" style="height:{{height}}rpx">

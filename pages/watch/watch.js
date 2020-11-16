@@ -8,26 +8,30 @@ Page({
    */
   data: {
     currentIdx: 0,
-    currentTab: 0,
-    height: 0,
-    navScrollLeft: 0,
+    currentTab: 1,
+    houseHeight: 870,
+    height: 1050,
     tabItem: ['好房', '发现', '行情', '踩盘'],
     navData: [
       {
         title: '必看二手',
-        classification: '精选房源'
+        classification: '精选房源',
+        img: '../../image/goodHouse.png'
       },
       {
         title: '优选新房',
-        classification: '热门好盘'
+        classification: '热门好盘',
+        img: '../../image/goodHouse1.png'
       },
       {
         title: '品质租房',
-        classification: '整租合租'
+        classification: '整租合租',
+        img: '../../image/goodHouse2.png'
       },
       {
         title: '海外好房',
-        classification: '全球置业'
+        classification: '全球置业',
+        img: '../../image/goodHouse3.png'
       }
   ],
     // loadMore: false, //"上拉加载"的变量，默认false，隐藏  
@@ -306,6 +310,88 @@ Page({
         img: '../../image/pic32.png',
         flameTime: '1.7万',
       }
+    ],
+    houseMessage: [
+      {
+        img1: '../../image/goodHousePic4.jpg',
+        img2: '../../image/goodHousePic5.jpg',
+        img3: '../../image/goodHousePic6.jpg',
+        address: '整租·凤凰苑',
+        size: '2室2厅1卫',
+        price: '2600元/月',
+        houseAddress: '庐山南大道/82m²/距1号线-珠江站622m',
+        desc: '精装修。距离最近公交站108m，可乘坐50路出行。朝南。新上房源、小区绿化率30.0%，适宜居住。民水民电，有电梯，适合有老人家的家庭居住',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '段白云',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
+      {
+        img1: '../../image/goodHousePic1.jpg',
+        img2: '../../image/goodHousePic2.jpg',
+        img3: '../../image/goodHousePic3.jpg',
+        address: '整租·联发君悦湖',
+        size: '2室2厅1卫',
+        price: '2200元/月',
+        houseAddress: '艾溪湖东/93m²',
+        desc: '距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '刘枝',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
+      {
+        img1: '../../image/goodHousePic1.jpg',
+        img2: '../../image/goodHousePic2.jpg',
+        img3: '../../image/goodHousePic3.jpg',
+        address: '整租·联发君悦湖',
+        size: '2室2厅1卫',
+        price: '2200元/月',
+        houseAddress: '艾溪湖东/93m²',
+        desc: '距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '刘枝',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
+      {
+        img1: '../../image/goodHousePic1.jpg',
+        img2: '../../image/goodHousePic2.jpg',
+        img3: '../../image/goodHousePic3.jpg',
+        address: '整租·联发君悦湖',
+        size: '2室2厅1卫',
+        price: '2200元/月',
+        houseAddress: '艾溪湖东/93m²',
+        desc: '距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '刘枝',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
+      {
+        img1: '../../image/goodHousePic1.jpg',
+        img2: '../../image/goodHousePic2.jpg',
+        img3: '../../image/goodHousePic3.jpg',
+        address: '整租·联发君悦湖',
+        size: '2室2厅1卫',
+        price: '2200元/月',
+        houseAddress: '艾溪湖东/93m²',
+        desc: '距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '刘枝',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
     ]
   },
 
@@ -325,10 +411,33 @@ Page({
     })
   },
 
+  switchNav: function (e) {
+    var cur = e.currentTarget.dataset.current
+    if (this.data.currentIdx == cur) {
+      return false
+    } else {
+      this.setData({
+        currentIdx: cur
+      })
+    }
+    wx.showToast({
+      title: '努力加载中...',
+      icon: 'loading',
+      duration: 500
+    })
+  },
+
   swiperTab: function (e) {
     var that = this
     that.setData({
       currentTab: e.detail.current
+    })
+  },
+
+  switchTab: function (e) {
+    var cur = e.detail.current
+    this.setData({
+      currentIdx: cur
     })
   },
 
@@ -375,12 +484,21 @@ Page({
    */
   onLoad: function (options) {
     // console.log(this.data.allFound.length)
-    let line = this.data.allFound.length
-    this.setData({
-      height: 40 + 115 * line
-    })
+    // let line = this.data.allFound.length
+    // let len = this.data.houseMessage.length
+    // this.setData({
+    //   // height: 40 + 115 * line,
+    //   height: 1050,
+    //   // houseHeight: 90 + 350 * len 
+    //   houseHeight: 870
+    // })
     // console.log(this.data.height)
     this.changeColor()
+
+    // let len = this.data.allFound.length
+    // this.setData({
+    //   houseHeight: 90 + 115 * len
+    // })
   },
 
   /**

@@ -32,13 +32,13 @@
     font-weight: bold;
 }
 
-.active {
+.swiper-tab .active {
     font-size: 40rpx;
     font-weight: bolder;
 }
 
 /* 控制底部边框长度 */
-.active::after {
+.swiper-tab .active::after {
     content: '';
     position: absolute;
     /* top: auto; */
@@ -157,3 +157,165 @@
     font-size: 28rpx;
     line-height: 100rpx;
 }
+
+.house-container {
+    /* border: 1px solid #000; */
+    height: 140rpx;
+    padding: 20rpx 0;
+    display: flex;
+    white-space: nowrap;
+    z-index: 2;
+}
+
+.nav-house {
+    border: 1px solid #ccc;
+    display: inline-block;
+    height: 110rpx;
+    width: 200rpx; 
+    border-radius: 10rpx;
+    margin: auto 20rpx auto 0;
+    text-align: center;
+    padding-top: 20rpx;  
+    box-shadow: 8rpx 8rpx 3rpx #ccc;
+}
+
+.nav-house .active {
+    border: none;
+    height: 110rpx;
+    width: 200rpx; 
+    border: 1px solid #000;
+    border-radius: 10rpx;
+    margin-top: -20rpx;
+    padding: 15rpx 0rpx 2rpx 2rpx;
+}
+
+/* .nav-house .active::after {
+    content: '';
+    border: 1px solid #000;
+} */
+
+.nav-item {
+    font-family: '楷体';
+    font-weight: 700;
+}
+
+.navTitle {
+    font-size: 36rpx;
+}
+
+.classification {
+    margin-top: 5rpx;
+    font-size: 24rpx;
+}
+
+.nav-item .img {
+    height: 50rpx;
+    width: 50rpx;
+    margin-top: -30rpx;
+    margin-right: -130rpx;
+}
+
+/* .house-message {
+    margin-bottom: 20rpx;
+    border: 1px solid #ccc;
+    border-radius: 10rpx;
+    box-shadow: 8rpx 8rpx 3rpx #ccc;
+}
+
+.house-message-pic {
+    display: flex;
+}
+
+.house-message-picOne {
+    margin-right: 8rpx;
+}
+
+.picOne {
+    height: 280rpx;
+    width: 480rpx;
+}
+
+.housePic {
+    height: 135rpx;
+    width: 250rpx;
+}
+
+.house-message-contant {
+    margin: 20rpx;
+    font-family: '楷体';
+    font-weight: bold;
+}
+
+.house-message-titlePrice {
+    display: flex;
+    justify-content: space-between;
+    font-size: 36rpx;
+}
+
+.house-message-title {
+    display: flex;
+}
+
+.house-message-address {
+    margin-right: 15rpx;
+}
+
+.house-message-price {
+    color: #ff3333;
+}
+
+.house-message-houseAddress {
+    padding-top: 5rpx;
+    font-size: 28rpx;
+    color: #666666;
+}
+
+.house-message-dec {
+    margin-top: 20rpx;
+    color: #888888;
+}
+
+.house-message-provider {
+    margin-top: 20rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.house-message-provider .provider {
+    display: flex;
+}
+
+.provider-pic {
+    margin-right: 10rpx;
+}
+
+.pro-pic {
+    height: 80rpx;
+    width: 80rpx;
+}
+
+.provider-name {
+    font-size: 36rpx;
+    margin-bottom: 8rpx;
+}
+
+.provider-tip {
+    color: #888888;
+}
+
+.say-tel {
+    display: flex;
+}
+
+.sayTel {
+    border-radius: 50%;
+}
+
+.pic-say {
+    background-color: #AAFFEE;
+    margin-right: 40rpx;
+}
+
+.pic-tel {
+    background-color: #17ABE3;
+} */

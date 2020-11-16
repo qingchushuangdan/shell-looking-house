@@ -1,0 +1,40 @@
+<!--pages/loans/loans.wxml-->
+<van-tabs animated>
+	<van-tab title="商业贷款" title-style="font-weight:bold;font-size:30rpx">
+		<view class="sumStyle">
+			<view class="sumStyleText">计算方式</view>
+			<view class="sumStyleSelect">
+				<van-radio-group value="{{ radio }}" bind:change="onChange">
+					<van-radio name="1">按贷款总额</van-radio>
+					<!-- <van-radio name="2">单选框 2</van-radio> -->
+				</van-radio-group>
+			</view>
+			<view class="sumStyleSelect">
+				<van-radio-group value="{{ radio }}" bind:change="onChange">
+					<van-radio name="2">按房屋总价</van-radio>
+					<!-- <van-radio name="2">单选框 2</van-radio> -->
+				</van-radio-group>
+			</view>
+		</view>
+		<van-cell-group>
+			<van-field
+			 border="{{ true }}"
+			 label="商贷金额"
+			 value="0"
+			 bind:change="onChange"
+			 custom-style="margin-left:32rpx;font-size:29rpx;font-weight:700;"
+			/>
+			<van-field
+			 border="{{ true }}"
+			 label="商贷年限"
+			 value="30年"
+			 is-link="{{true}}"
+			 bind:change="onChange"
+			 custom-style="margin-left:32rpx;font-size:29rpx;font-weight:700;font-color:black"
+			/>
+		</van-cell-group>
+	</van-tab>
+	<van-tab title="组合贷款" title-style="font-weight:bold;font-size:30rpx">内容 2</van-tab>
+	<van-tab title="公积金贷款" title-style="font-weight:bold;font-size:30rpx">内容 3</van-tab>
+</van-tabs>
+

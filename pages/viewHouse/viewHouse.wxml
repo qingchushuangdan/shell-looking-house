@@ -1,0 +1,33 @@
+<!--pages/viewHouse/viewHouse.wxml-->
+<view class="houseDetail">
+	<view class="container">
+		<scroll-view scroll-y="true">
+			<view class="lunbo">
+				<swiper
+				 class="swiper"
+				 autoplay="{{autoplay}}"
+				 current="swiperCurrent"
+				 interval="{{interval}}"
+				 duration="{{duration}}"
+				 circular="{{circular}}"
+				 style="height: {{height}}px"
+				 bindchange="swiperChange"
+				>
+					<block wx:for="{{img}}" wx:key="index">
+						<swiper-item>
+							<image
+							 class="lunbo-pic"
+							 src="{{item}}"
+							 bindtap="swiperClick"
+							>
+							</image>
+						</swiper-item>
+					</block>
+				</swiper>
+			</view>
+		</scroll-view>
+	</view>
+	<view class="endConsult">
+	</view>
+</view>
+

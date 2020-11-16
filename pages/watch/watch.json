@@ -2,6 +2,7 @@
   "usingComponents": {
     "found": "/component/found/found",
     "quotation": "/component/quotation/quotation",
-    "plate": "/component/plate/plate"
+    "plate": "/component/plate/plate",
+    "housemessage": "/component/housemessage/housemessage"
   }
 }
