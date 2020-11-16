@@ -1,8 +1,10 @@
 {
   "pages": [
+    "pages/index/index",
+    "pages/loans/loans",
+    "pages/sendHouse/sendHouse",
     "pages/watch/watch",
     "pages/newHouse/newHouse",
-    "pages/index/index",
     "pages/secondHouse/secondHouse",
     "pages/me/me",
     "pages/rent/rent",
@@ -12,7 +14,8 @@
     "pages/love/love",
     "pages/scan/scan",
     "pages/subscribe/subscribe",
-    "pages/viewHouse/viewHouse"
+    "pages/viewHouse/viewHouse",
+    "pages/selectCity/selectCity"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "van-search": "@vant/weapp/search/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index"
+  },
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTitleText": "发布房源",
+  "navigationBarTextStyle": "black",
+  "navigationBarBold": "bold"
+}

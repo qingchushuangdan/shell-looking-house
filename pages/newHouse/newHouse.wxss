@@ -117,3 +117,16 @@
     padding: 5rpx;
     border-radius: 5rpx;
 }
+.body-content_labelbox{
+    font-size: 22rpx;
+    /* border: 1rpx solid #D9D8D9; */
+    
+    padding: 5rpx;
+    border-radius: 5rpx;
+    color: #9399A5;
+    margin-right: 15rpx;
+}
+.body-content_label{
+    display: flex;
+    margin-top: 10rpx;
+}

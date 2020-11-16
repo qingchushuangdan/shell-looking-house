@@ -1,0 +1,12 @@
+/* pages/loans/loans.wxss */
+.sumStyle{
+    margin: 30rpx 60rpx 20rpx 60rpx;
+    display: flex;
+}
+.sumStyleText{
+    flex: 1;
+    font-weight: 700;
+}
+.sumStyleSelect{
+    flex: 1;
+}

@@ -158,6 +158,16 @@ Page({
       url: '../newHouse/newHouse'
     })
   },
+  sendHouse:function(){
+    wx.navigateTo({
+      url: '../sendHouse/sendHouse'
+    })
+  },
+  loans:function(){
+    wx.navigateTo({
+      url: '../loans/loans'
+    })
+  },
 
   /**
    * 生命周期函数--监听页面加载

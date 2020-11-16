@@ -26,7 +26,7 @@ Page({
     imgUrls: [
       '/image/newhouseswiper.jpg',
       '/image/newhouseswiper2.jpg'
-        ],
+    ],
     interval: '3000',
     duration: '800',
     classfication: [
@@ -39,11 +39,11 @@ Page({
         image: '/image/downArrow.png'
       },
       {
-        name: '房型',
+        name: '户型',
         image: '/image/downArrow.png'
       },
       {
-        name: '更多',
+        name: '筛选',
         image: '/image/downArrow.png'
       }
     ],
@@ -67,6 +67,13 @@ Page({
         title: '华润昆仑御',
         labelcondition: '下期待开',
         address: '红谷滩-九龙湖',
+        labelbox:
+        {
+          label1: '住宅',
+          label2: '预售中',
+          label3: '新盘首开',
+          label4: '品牌房企'
+        },
         singleprice: '价格待定',
         area: '97-125',
         signIcon: 'background-color: #FD7A72;'
@@ -76,6 +83,13 @@ Page({
         title: '鸿海水岸之城沁园',
         labelcondition: '在售',
         address: '南昌县-银三角',
+        labelbox:
+        {
+          label1: 'VR寻宝',
+          label2: '住宅',
+          label3: '视频看房',
+          label4: 'VR看房'
+        },
         singleprice: '10200元/m²',
         area: '88-100',
         signIcon: 'background-color: #2D75F1;'
@@ -85,6 +99,13 @@ Page({
         title: '绿滋肴庙街',
         labelcondition: '在售',
         address: '青山湖区-塘山广场',
+        labelbox:
+        {
+          label1: '商业类',
+          label2: '无理由退房',
+          label3: '小户型',
+          label4: ''
+        },
         singleprice: '7500元/m²',
         area: '40',
         signIcon: 'background-color: #2D75F1;'
@@ -94,6 +115,13 @@ Page({
         title: '鸿海城',
         labelcondition: '在售',
         address: '新建区-红谷滩',
+        labelbox:
+        {
+          label1: 'VR寻宝',
+          label2: '住宅',
+          label3: '视频看房',
+          label4: 'VR看房'
+        },
         singleprice: '11000元/m²',
         area: '88-103',
         signIcon: 'background-color: #2D75F1;'
@@ -103,14 +131,21 @@ Page({
         title: '嘉福新天地',
         labelcondition: '下期待开',
         address: '南昌县-象湖',
+        labelbox:
+        {
+          label1: '住宅',
+          label2: '预售中',
+          label3: '',
+          label4: ''
+        },
         singleprice: '价格待定',
         area: '89-109',
         signIcon: 'background-color: #FD7A72;'
       }
-    ]
+    ],
   },
   changeColor: function (e) {
-    var that = this 
+    var that = this
     let arr = that.data.newHouse
     arr.forEach((item, index) => {
       // console.log(item.sign)
