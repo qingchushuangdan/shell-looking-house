@@ -11,7 +11,8 @@
     "pages/follow/follow",
     "pages/love/love",
     "pages/scan/scan",
-    "pages/subscribe/subscribe"
+    "pages/subscribe/subscribe",
+    "pages/viewHouse/viewHouse"
   ],
   "window": {
     "backgroundTextStyle": "light",

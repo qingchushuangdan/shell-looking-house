@@ -8,9 +8,9 @@ Page({
    */
   data: {
     currentIdx: 0,
-    currentTab: 0,
-    houseHeight: 4000,
-    height: 0,
+    currentTab: 1,
+    houseHeight: 870,
+    height: 1050,
     tabItem: ['好房', '发现', '行情', '踩盘'],
     navData: [
       {
@@ -310,6 +310,88 @@ Page({
         img: '../../image/pic32.png',
         flameTime: '1.7万',
       }
+    ],
+    houseMessage: [
+      {
+        img1: '../../image/goodHousePic4.jpg',
+        img2: '../../image/goodHousePic5.jpg',
+        img3: '../../image/goodHousePic6.jpg',
+        address: '整租·凤凰苑',
+        size: '2室2厅1卫',
+        price: '2600元/月',
+        houseAddress: '庐山南大道/82m²/距1号线-珠江站622m',
+        desc: '精装修。距离最近公交站108m，可乘坐50路出行。朝南。新上房源、小区绿化率30.0%，适宜居住。民水民电，有电梯，适合有老人家的家庭居住',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '段白云',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
+      {
+        img1: '../../image/goodHousePic1.jpg',
+        img2: '../../image/goodHousePic2.jpg',
+        img3: '../../image/goodHousePic3.jpg',
+        address: '整租·联发君悦湖',
+        size: '2室2厅1卫',
+        price: '2200元/月',
+        houseAddress: '艾溪湖东/93m²',
+        desc: '距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '刘枝',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
+      {
+        img1: '../../image/goodHousePic1.jpg',
+        img2: '../../image/goodHousePic2.jpg',
+        img3: '../../image/goodHousePic3.jpg',
+        address: '整租·联发君悦湖',
+        size: '2室2厅1卫',
+        price: '2200元/月',
+        houseAddress: '艾溪湖东/93m²',
+        desc: '距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '刘枝',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
+      {
+        img1: '../../image/goodHousePic1.jpg',
+        img2: '../../image/goodHousePic2.jpg',
+        img3: '../../image/goodHousePic3.jpg',
+        address: '整租·联发君悦湖',
+        size: '2室2厅1卫',
+        price: '2200元/月',
+        houseAddress: '艾溪湖东/93m²',
+        desc: '距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '刘枝',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
+      {
+        img1: '../../image/goodHousePic1.jpg',
+        img2: '../../image/goodHousePic2.jpg',
+        img3: '../../image/goodHousePic3.jpg',
+        address: '整租·联发君悦湖',
+        size: '2室2厅1卫',
+        price: '2200元/月',
+        houseAddress: '艾溪湖东/93m²',
+        desc: '距离最近公交站145米，可乘坐823路出行。新上房源。小区绿化率35.0%，适宜居住。民水民电。有电梯，适合有老人的家庭居住。朝南。精装修',
+        providerPic: '../../image/provider-pic.png',
+        providerName: '刘枝',
+        providerTip: '房源详细信息找我咨询',
+        say: '../../image/say.png',
+        tel: '../../image/tel.png',
+        url: '../viewHouse/viewHouse'
+      },
     ]
   },
 
@@ -402,10 +484,14 @@ Page({
    */
   onLoad: function (options) {
     // console.log(this.data.allFound.length)
-    let line = this.data.allFound.length
-    this.setData({
-      height: 40 + 115 * line
-    })
+    // let line = this.data.allFound.length
+    // let len = this.data.houseMessage.length
+    // this.setData({
+    //   // height: 40 + 115 * line,
+    //   height: 1050,
+    //   // houseHeight: 90 + 350 * len 
+    //   houseHeight: 870
+    // })
     // console.log(this.data.height)
     this.changeColor()
 
