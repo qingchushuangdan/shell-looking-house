@@ -1,6 +1,5 @@
 .header{
     width: 100%;
-    background-color: blue;
 }
 .content_left{
     display: flex;

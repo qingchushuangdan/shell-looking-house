@@ -29,7 +29,7 @@
 				</view>
 				<text class="body-second_text">新房</text>
 			</view>
-			<view class="body-second_content">
+			<view class="body-second_content" bindtap="rentHouse">
 				<view class="body-second_iconout">
 					<image class="body-second_icon" src="/image/secondhouse3.png"></image>
 				</view>

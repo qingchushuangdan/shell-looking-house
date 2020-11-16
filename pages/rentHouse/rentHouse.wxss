@@ -1,0 +1,74 @@
+.van-search{
+    background-color: #fff;
+    box-shadow:3px 3px 10px gray;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    border-radius: 5px;
+}
+.body-first{
+    margin-top: 40rpx;
+}
+.body-first_contentFirst{
+    display: flex;
+    text-align: center;
+}
+.body-first_content{
+    flex: 1;
+}
+.body-first_icon{
+    width: 80rpx;
+    height: 80rpx;
+}
+.body-first_text{
+    font-size: 28rpx;
+}
+.body-first_contentSecond{
+    display: flex;
+    text-align: center;
+    margin-top: 30rpx;
+}
+.body-second{
+    margin-top: 50rpx;
+    display: flex;
+}
+.body-second_content{
+    border: solid 1px #E1E1E1;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    margin-left: 20rpx;
+}
+.body-second_text{
+    font-size: 30rpx;
+    margin: 15rpx 50rpx 5rpx 20rpx;
+}
+.body-second_text1{
+    display: block;
+    font-size: 25rpx;
+    margin-bottom: 20rpx;
+}
+.body-third{
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid #E1E1E1;
+    margin-top: 30rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.body-third_text{
+    display: flex;
+    flex: 1;
+}
+.body-third_info{
+    margin-bottom: 35rpx;
+}
+.body-third_icon{
+    width: 50rpx;
+    height: 50rpx;
+}
+.body-third_icon1{
+    width: 40rpx;
+    height: 40rpx;
+    padding-left: 60rpx;
+}
