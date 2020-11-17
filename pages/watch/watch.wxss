@@ -215,7 +215,7 @@
     margin-right: -130rpx;
 }
 
-.house-message {
+/* .house-message {
     margin-bottom: 20rpx;
     border: 1px solid #ccc;
     border-radius: 10rpx;
@@ -318,4 +318,4 @@
 
 .pic-tel {
     background-color: #17ABE3;
-}
+} */

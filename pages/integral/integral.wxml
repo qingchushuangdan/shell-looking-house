@@ -3,7 +3,6 @@
         <view class="content_left">
             <view class="content_info">可用积分</view>
             <image class="img" src="../../image/question.png"  />
-            view.
         </view>
     </view>
 </view>

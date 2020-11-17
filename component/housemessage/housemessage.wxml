@@ -1,0 +1,94 @@
+<!--component/houseMessage/houseMessage.wxml-->
+<view class="house-message">
+	<navigator
+	 class=""
+	 target=""
+	 url="{{houseMessage.url}}"
+	 hover-class="navigator-hover"
+	 open-type="navigate"
+	>
+		<view class="house-message-pic">
+			<view class="house-message-picOne">
+				<image class="picOne" src="{{houseMessage.img1}}" />
+			</view>
+			<view class="house-message-picTwo">
+				<image class="picTwo housePic" src="{{houseMessage.img2}}" />
+				<image class="picThree housePic" src="{{houseMessage.img3}}" />
+			</view>
+		</view>
+		<view class="house-message-contant">
+			<view class="house-message-titlePrice">
+				<view class="house-message-title">
+					<view class="house-message-address">{{houseMessage.address}}</view>
+					<view class="house-message-size">{{houseMessage.size}}</view>
+				</view>
+				<view class="house-message-price">
+					<view class="price">{{houseMessage.price}}</view>
+				</view>
+			</view>
+			<view class="house-message-houseAddress">{{houseMessage.houseAddress}}</view>
+			<view class="house-message-dec">{{houseMessage.desc}}</view>
+			<view class="house-message-provider">
+				<view class="provider">
+					<view class="provider-pic">
+						<image class="pro-pic" src="{{houseMessage.providerPic}}"></image>
+					</view>
+					<view class="provider-message">
+						<view class="provider-name">{{houseMessage.providerName}}</view>
+						<view class="provider-tip">{{houseMessage.providerTip}}</view>
+					</view>
+				</view>
+				<view class="say-tel">
+					<view class="say">
+						<image class="pic-say pro-pic sayTel" src="{{houseMessage.say}}" />
+					</view>
+					<view class="tel">
+						<image class="pic-tel pro-pic sayTel" src="{{houseMessage.tel}}" />
+					</view>
+				</view>
+			</view>
+		</view>
+	</navigator>
+	<!-- <view class="house-message-pic">
+		<view class="house-message-picOne">
+			<image class="picOne" src="{{houseMessage.img1}}" />
+		</view>
+		<view class="house-message-picTwo">
+			<image class="picTwo housePic" src="{{houseMessage.img2}}" />
+			<image class="picThree housePic" src="{{houseMessage.img3}}" />
+		</view>
+	</view>
+	<view class="house-message-contant">
+		<view class="house-message-titlePrice">
+			<view class="house-message-title">
+				<view class="house-message-address">{{houseMessage.address}}</view>
+				<view class="house-message-size">{{houseMessage.size}}</view>
+			</view>
+			<view class="house-message-price">
+				<view class="price">{{houseMessage.price}}</view>
+			</view>
+		</view>
+		<view class="house-message-houseAddress">{{houseMessage.houseAddress}}</view>
+		<view class="house-message-dec">{{houseMessage.desc}}</view>
+		<view class="house-message-provider">
+			<view class="provider">
+				<view class="provider-pic">
+					<image class="pro-pic" src="{{houseMessage.providerPic}}"></image>
+				</view>
+				<view class="provider-message">
+					<view class="provider-name">{{houseMessage.providerName}}</view>
+					<view class="provider-tip">{{houseMessage.providerTip}}</view>
+				</view>
+			</view>
+			<view class="say-tel">
+				<view class="say">
+					<image class="pic-say pro-pic sayTel" src="{{houseMessage.say}}" />
+				</view>
+				<view class="tel">
+					<image class="pic-tel pro-pic sayTel" src="{{houseMessage.tel}}" />
+				</view>
+			</view>
+		</view>
+	</view> -->
+</view>
+

@@ -1,0 +1,15 @@
+/* pages/viewHouse/viewHouse.wxss */
+.container {
+    z-index: 1;
+    padding: 0;
+}
+
+.endConsult {
+    z-index: 2;
+    position: fixed;
+}
+
+.lunbo-pic {
+    width: 100%;
+    height: 480rpx;
+}
