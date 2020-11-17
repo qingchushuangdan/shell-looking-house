@@ -10,3 +10,40 @@
 .sumStyleSelect{
     flex: 1;
 }
+.body{
+    margin: 0 32rpx;
+}
+.noticeBar{
+    margin: 20rpx 32rpx;
+    background-color: #F5F8FE;
+    display: flex;
+    padding: 30rpx 21rpx;
+}
+.noticeBar .date{
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: inline-block;
+    font-size: 20rpx;
+    background-color: #2D75F1;
+    padding: 0 10rpx;
+
+}
+.noticeBar .text{
+    font-size: 25rpx;
+    margin-left: 20rpx;
+}
+.noticeBar .historyText{
+    font-size: 25rpx;
+    font-weight: 600;
+    margin-left: 40rpx;
+    color:  #2D75F1;
+}
+.button{
+    margin: 60rpx 30rpx;
+}
+.end{
+    text-align: center;
+    font-size: 26rpx;
+    color:  #2D75F1;
+}
