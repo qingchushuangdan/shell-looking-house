@@ -1,2 +1,11 @@
-<!--pages/follow/follow.wxml-->
-<text>pages/follow/follow.wxml</text>
+<view class="header">
+    <van-tabs active="{{ active }}" bind:change="onChange">
+        <van-tab title="买房">
+            <image class="img" src="/image/house-source.png" />
+            <p class="text_one">您还没有关注的房源</p>
+            <p class="text_two">关注之后能获得更多的房源动态信息</p>
+        </van-tab>
+        <van-tab title="租房"></van-tab>
+        <van-tab title="小区"></van-tab>
+    </van-tabs>
+</view>

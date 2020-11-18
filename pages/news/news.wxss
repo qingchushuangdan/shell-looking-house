@@ -1,1 +1,8 @@
-/* pages/news/news.wxss */
+.img{
+    width: 100%;
+}
+.info{
+    margin-top: 50rpx;
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+}

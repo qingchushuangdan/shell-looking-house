@@ -1,2 +1,6 @@
-<!--pages/news/news.wxml-->
-<text>pages/news/news.wxml</text>
+
+<image class="img" src="/image/info.png" />
+  
+<view class="info">
+    <van-button type="info" size="large">立即找房</van-button>
+</view>

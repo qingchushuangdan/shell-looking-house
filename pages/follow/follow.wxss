@@ -1,1 +1,14 @@
-/* pages/follow/follow.wxss */
+.img{
+    width: 100%;
+}
+p.text_one {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+p.text_two {
+    display: block;
+    text-align: center;
+    color: #999999;
+    font-size: 28rpx;
+}

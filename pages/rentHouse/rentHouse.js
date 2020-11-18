@@ -55,6 +55,56 @@ Page({
         search: '业主力推房源'
       }
     ],
+    SelectHouse: [
+      {
+        image: '/image/renthouse1.jpg',
+        title: '整租 · 金涛御景花园 1室0厅',
+        detail: '52m²/1室0厅1卫/南',
+        desc: '精装',
+        price: '1200',
+        data: '元/月'
+      },
+      {
+        image: '/image/renthouse2.jpg',
+        title: '整租 · 凤凰世纪华城 3室1厅',
+        detail: '52m²/1室0厅1卫/南',
+        desc: '精装',
+        price: '2500',
+        data: '元/月'
+      },
+      {
+        image: '/image/renthouse3.jpg',
+        title: '整租 · 鸿宇锦绣天湖花园 3室2厅',
+        detail: '52m²/1室0厅1卫/南',
+        desc: '精装',
+        price: '1500',
+        data: '元/月'
+      },
+      {
+        image: '/image/renthouse4.jpg',
+        title: '独栋 · 凯旋豪门公寓 4室2厅',
+        detail: '52m²/1室0厅1卫/南',
+        desc: '精装',
+        price: '3000',
+        data: '元/月'
+      },
+      {
+        image: '/image/renthouse5.jpg',
+        title: '独栋 · 佳乐怡园 1室0厅',
+        detail: '52m²/1室0厅1卫/南',
+        desc: '精装',
+        price: '1800',
+        data: '元/月'
+      },
+      {
+        image: '/image/secondHouse11.jpg',
+        title: '整租 · 南方翡翠公园 1室0厅',
+        detail: '52m²/1室0厅1卫/南',
+        desc: '精装',
+        price: '2200',
+        data: '元/月'
+      }
+    ]
   },
 
   /**
