@@ -4,7 +4,9 @@
     "van-tabs": "@vant/weapp/tabs/index",
     "van-radio": "@vant/weapp/radio/index",
     "van-radio-group": "@vant/weapp/radio-group/index",
-    "van-field": "@vant/weapp/field/index"
+    "van-field": "@vant/weapp/field/index",
+    "van-button": "@vant/weapp/button/index"
+
   },
   "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#fff",

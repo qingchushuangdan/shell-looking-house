@@ -86,7 +86,7 @@
 			房屋工具
 		</view>
 		<view class="body-third_content">
-			<view class="body-third_contentLeft">
+			<view class="body-third_contentLeft" bindtap="loans">
 				<view class="body-third_contentLeftIn">
 					<view class="body-third_contentTitle">
 						房贷计算

@@ -16,23 +16,60 @@
 				</van-radio-group>
 			</view>
 		</view>
-		<van-cell-group>
+		<view class="body">
+			<van-cell-group>
+				<van-field
+				 border="{{ true }}"
+				 label="商贷金额"
+				 value="0"
+				 bind:change="onChange"
+				 custom-style="font-size:29rpx;font-weight:700;"
+				/>
+				<van-field
+				 border="{{ true }}"
+				 label="商贷年限"
+				 value="30年"
+				 is-link="{{true}}"
+				 bind:change="onChange"
+				 custom-style="font-size:29rpx;font-weight:700;font-color:black"
+				/>
+				<van-field
+				 border="{{ true }}"
+				 label="利率方式"
+				 value="按LPR"
+				 is-link="{{true}}"
+				 bind:change="onChange"
+				 custom-style="font-size:29rpx;font-weight:700;font-color:black"
+				/>
+			</van-cell-group>
+			<view class="noticeBar">
+				<view class="date">07.20</view>
+				<view class="text">LPR: 一年期3.85%， 五年期4.65%</view>
+				<view class="historyText">历史LPR</view>
+			</view>
 			<van-field
 			 border="{{ true }}"
-			 label="商贷金额"
-			 value="0"
-			 bind:change="onChange"
-			 custom-style="margin-left:32rpx;font-size:29rpx;font-weight:700;"
-			/>
-			<van-field
-			 border="{{ true }}"
-			 label="商贷年限"
-			 value="30年"
+			 label="商贷利率"
+			 value="4.65%(LPR+0基点)"
 			 is-link="{{true}}"
 			 bind:change="onChange"
-			 custom-style="margin-left:32rpx;font-size:29rpx;font-weight:700;font-color:black"
+			 custom-style="font-size:29rpx;font-weight:700;font-color:black"
 			/>
-		</van-cell-group>
+			<view class="button">
+				<van-button
+				 type="default"
+				 color="#2D75F1"
+				 size="large"
+				 block="{{true}}"
+				>开始计算
+				</van-button>
+			</view>
+			<view class="end">
+				<a href="#">常见问题</a>
+				|
+				<a href="#">反馈建议</a>
+			</view>
+		</view>
 	</van-tab>
 	<van-tab title="组合贷款" title-style="font-weight:bold;font-size:30rpx">内容 2</van-tab>
 	<van-tab title="公积金贷款" title-style="font-weight:bold;font-size:30rpx">内容 3</van-tab>

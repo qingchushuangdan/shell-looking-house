@@ -2,7 +2,10 @@
   "pages": [
     "pages/news/news",
     "pages/index/index",
+<<<<<<< HEAD
     "pages/follow/follow",
+=======
+>>>>>>> 0be221f6f2a55954a8e19eb8d5bee8a16c71b376
     "pages/rentHouse/rentHouse",
     "pages/loans/loans",
     "pages/sendHouse/sendHouse",
@@ -12,11 +15,20 @@
     "pages/me/me",
     "pages/rent/rent",
     "pages/money/money",
+<<<<<<< HEAD
     "pages/love/love",
     "pages/scan/scan",
     "pages/subscribe/subscribe",
     "pages/viewHouse/viewHouse",
     "pages/selectCity/selectCity"
+=======
+    "pages/watch/watch",
+    "pages/news/news",
+    "pages/follow/follow",
+    "pages/love/love",
+    "pages/scan/scan",
+    "pages/subscribe/subscribe"
+>>>>>>> 0be221f6f2a55954a8e19eb8d5bee8a16c71b376
   ],
   "window": {
     "backgroundTextStyle": "light",
